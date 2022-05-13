@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 85b3d6e0b1dc1d1123324ab3eafe4452c34e3b7f
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: b0c4926c2bd381a708336a6e90ef9bb13b97629c
+ms.sourcegitcommit: b50f9a265cf3a73ace7cbec4b5cb6f7420acc139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899343"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "141151318"
 ---
 # <a name="lab-1---exercise-1---manage-compliance-roles"></a>实验室 1 - 练习 1 - 管理合规性角色
 
@@ -62,7 +62,7 @@ ms.locfileid: "137899343"
 
 5. 如果“改进合规性状况”消息窗口打开，请阅读文本消息，然后选择两次“下一步”，再选择“完成”  。
 
-6. 向下滚动并从左下方选择“设置”，查看 Joni 可以使用哪些设置。
+6. 从左侧导航菜单中选择“全部显示”，然后选择“设置”，查看 Joni 可以使用哪些设置 。
 
 7. 熟悉不同的设置。 完成后，让浏览器窗口保持打开状态。
 

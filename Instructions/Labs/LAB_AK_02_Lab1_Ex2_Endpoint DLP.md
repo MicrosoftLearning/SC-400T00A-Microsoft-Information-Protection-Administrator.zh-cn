@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e9ee1e70f3ec7b99219b10c5684347420da0f8dd
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: f3d68c98851f6405e52885e8eb3b059ac0d71504
+ms.sourcegitcommit: b50f9a265cf3a73ace7cbec4b5cb6f7420acc139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899351"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "141151312"
 ---
 # <a name="lab-2---exercise-2---manage-endpoint-dlp"></a>实验室 2 - 练习 2 - 管理终结点 DLP
 
@@ -141,7 +141,7 @@ ms.locfileid: "137899351"
 
 4. 在“数据丢失防护”窗口中选择“终结点 DLP 设置”选项卡 。
 
-5. 在“终结点 DLP 设置”选项卡中，展开“文件路径排除”区域，并选择“+ 添加文件路径排除”  。
+5. 在“终结点 DLP 设置”选项卡中，展开“Windows 的文件路径排除”区域，并选择“+ 添加文件路径排除”  。
 
 6. 在“输入要排除的路径”字段中，键入 C:\FilePathExclusionTest，然后选择 +。
 

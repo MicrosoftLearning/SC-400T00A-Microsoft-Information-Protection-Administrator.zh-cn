@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e6f9b38a496a6f35e5fb0fc5cd46be83cdc667c2
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: 868b12d70dbc7c26d12f3543c0cbed7ddaec1000
+ms.sourcegitcommit: b50f9a265cf3a73ace7cbec4b5cb6f7420acc139
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899331"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "141151321"
 ---
 # <a name="lab-3---exercise-4---use-ediscovery-for-recovery"></a>实验室 3 - 练习 4 - 使用电子数据展示进行恢复
 
@@ -24,7 +24,7 @@ ms.locfileid: "137899331"
 
 5. 在“案件名称”字段中，键入“标记 8 项目案件”，然后在“案件说明”中键入“本案件将用于评估 Megan Bowen 的关于标记 8 项目的邮件”，然后选择“保存”
 
-6. 在“核心电子数据展示”页面上，双击“标记 8 项目事例”以打开事例 。
+6. 在“核心电子数据展示”页面上，单击“标记 8 项目事例”以打开事例 。
 
 7. 在“事例”视图中，选择“搜索”选项卡。
 
