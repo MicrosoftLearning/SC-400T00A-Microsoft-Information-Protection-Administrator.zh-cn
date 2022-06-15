@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 05acea7ffe00c54d00c935da94f15ba402b23121
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: d8cf9d01fd8f69396de10007c3da442a391c2f36
+ms.sourcegitcommit: 8194831011a18168bab9873a95798c96a13cc448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899333"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145025189"
 ---
 # <a name="lab-2---exercise-3---manage-dlp-reports"></a>实验室 2 - 练习 3 - 管理 DLP 报告
 
@@ -18,7 +18,7 @@ ms.locfileid: "137899333"
 
 2. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft 365 合规门户  。  管理员的密码应由实验室托管提供程序提供。
 
-3. 在左侧导航窗格中，选择“权限”，然后在“合规性中心”下，选择“角色”。  标记“安全读取者”角色旁边的复选框。
+3. 在左侧导航窗格中，选择“权限”，然后在“Microsoft Purview 解决方案”下，选择“角色”  。  标记“安全读取者”角色旁边的复选框。
 
 4. 在“安全读取者”窗格中，在“成员”领域，选择“编辑”。
 

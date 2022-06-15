@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a826e5a9cac44bd65f765cfe1322731747535611
-ms.sourcegitcommit: b50f9a265cf3a73ace7cbec4b5cb6f7420acc139
+ms.openlocfilehash: da7e3bc14cc2631176504a950c14d9b1a4ed2401
+ms.sourcegitcommit: 8194831011a18168bab9873a95798c96a13cc448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "141151315"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145025186"
 ---
 # <a name="lab-3---exercise-1---configure-retention-policies"></a>实验室 3 - 练习 1 - 配置保留策略
 
@@ -23,7 +23,7 @@ ms.locfileid: "141151315"
 
 3. 在“Microsoft 365 合规门户”的左侧导航窗格中，选择“策略”，然后在“数据”下选择“保留”。
 
-4. 在“信息治理”页上的“保留策略”选项卡中，选择“+ 新建保留策略”  。
+4. 在“数据生命周期管理”页面的“保留策略”选项卡中，选择“+ 新建保留策略”  。
 
 5. 在“为保留策略命名”页上的“名称”和“说明”中输入以下信息  ：
 

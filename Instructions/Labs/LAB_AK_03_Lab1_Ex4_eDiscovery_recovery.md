@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 868b12d70dbc7c26d12f3543c0cbed7ddaec1000
-ms.sourcegitcommit: b50f9a265cf3a73ace7cbec4b5cb6f7420acc139
+ms.openlocfilehash: 126cadc288eaa7dc4713f9f3543d21c7bf9da112
+ms.sourcegitcommit: 8194831011a18168bab9873a95798c96a13cc448
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "141151321"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "145025195"
 ---
 # <a name="lab-3---exercise-4---use-ediscovery-for-recovery"></a>实验室 3 - 练习 4 - 使用电子数据展示进行恢复
 
@@ -18,9 +18,9 @@ ms.locfileid: "141151321"
 
 2. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 身份登录到“Microsoft 365 合规性”门户  。
 
-3. 在门户的左侧导航窗格中，展开“电子数据展示”，然后选择“核心” 。
+3. 在门户的左侧导航窗格中，展开“电子数据展示”，然后选择“标准” 。
 
-4. 在“核心电子数据展示”页面上，选择“+ 创建资源” 。
+4. 在“电子数据展示(标准版)”页面上，选择“+ 创建案件” 。
 
 5. 在“案件名称”字段中，键入“标记 8 项目案件”，然后在“案件说明”中键入“本案件将用于评估 Megan Bowen 的关于标记 8 项目的邮件”，然后选择“保存”
 
@@ -54,7 +54,7 @@ ms.locfileid: "141151321"
 
 2. 在“Microsoft Edge”中，导航到 https://compliance.microsoft.com ，并以“MOD 管理员”身份登录到“Microsoft 365 合规性”门户  。  你可能需要注销 Joni Sherman 的登录。 
 
-3. 在左侧导航窗格中，选择“权限”，然后在“合规性中心”下，选择“角色”。  选择“记录管理”角色。
+3. 在左侧导航窗格中，选择“权限”，然后在“Microsoft Purview 解决方案”下，选择“角色”  。  选择“记录管理”角色。
 
 4. 在角色概述窗格中，选择“成员”类别旁边的“编辑” 。
 
@@ -78,13 +78,13 @@ ms.locfileid: "141151321"
 
 2. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 身份登录到“Microsoft 365 合规性”门户  。
 
-3. 在“Microsoft 365 合规性”门户的左侧导航窗格中，展开“电子数据展示”，然后选择“核心”  。
+3. 在“Microsoft 365 合规性”门户的左侧导航窗格中，展开“电子数据展示”，然后选择“标准”  。
 
 4. 单击“标记 8 项目事例”以打开事例。
 
 5. 选择“搜索”选项卡，然后选择“标记 8 项目”搜索 。
 
-提示：如果你的电子数据展示搜索没有数据，请考虑搜索参数。  在上一实验室中，你是否让 Megan 发送了有关“标记 8”项目的电子邮件？  如果没有，请考虑将搜索中的关键字更改为 Megan 邮箱中任何现有电子邮件中的任何术语。  例如，“planner”一词通常出现在 Megan 现有的几封电子邮件中。  搜索必须具有数据，以便导出具有任何进程。
+提示：如果你的电子数据展示搜索没有数据，请考虑搜索参数。 Megan 的邮箱应该包含一些关于 Mark 8 项目的邮件。  如果没有，请考虑将搜索中的关键字更改为 Megan 邮箱中任何现有电子邮件中的任何术语。  例如，“planner”一词通常出现在 Megan 现有的几封电子邮件中。  搜索必须具有数据，以便导出具有任何进程。
 
 6. 在“标记 8 项目”对话框中，选择“操作”按钮下拉菜单，然后选择“导出结果”  。
 
