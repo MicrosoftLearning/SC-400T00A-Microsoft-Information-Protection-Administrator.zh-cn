@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 316829a7c3ad1a9aa61b13121c1df0dbc4836590
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
+ms.openlocfilehash: 6aaa487eccab09f5627441ca0ac33b9bb20abb20
+ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899360"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "147154812"
 ---
 # <a name="lab-3---exercise-3---configure-service-based-retention"></a>实验室 3 - 练习 3 - 配置基于服务的保留
 
@@ -16,22 +16,26 @@ ms.locfileid: "137899360"
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 虚拟机 (LON-CL1)。
 
-2. 在“Microsoft Edge”中，导航到 https://outlook.office.com/ecp 并以 Joni Sherman 的身份登录到 Exchange 管理中心  。
+1. 在“Microsoft Edge”中，导航到 https://outlook.office.com/ecp 并以 Joni Sherman 的身份登录到 Exchange 管理中心  。 以 JoniS@WWLxZZZZZZ.onmicrosoft.com 身份登录（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  Joni 的密码应由实验室托管提供程序提供。
 
-3. 在“Exchange 管理中心”的左侧导航窗格中，选择“收件人”，然后选择“邮箱”  。
+1. 在“保持登录?”对话框上，选中“不再显示此内容”复选框，然后选择“否”  。
 
-4. 选择 Alex Wilber 的邮箱，然后选择“铅笔”图标以编辑该邮箱。
+1. 如果显示欢迎使用屏幕，请关闭它。
 
-5. 在“编辑用户邮箱”窗口中，选择“邮箱功能” 。
+1. 在“Exchange 管理中心”的左侧导航窗格中，选择“收件人”，然后选择“邮箱”  。
 
-6. 在“诉讼保留:**已禁用”** 下，选择“启用”。
+1. 选择 Alex Wilber 的邮箱，然后选择“铅笔”图标以编辑该邮箱。
 
-7. 在“诉讼保留”页面上，填写以下信息：
+1. 在“编辑用户邮箱”窗口中，选择“邮箱功能” 。
+
+1. 向下滚动到“诉讼保留: 已禁用”，并选择“启用” 。
+
+1. 在“诉讼保留”页面上，填写以下信息：
 
     - 诉讼保留期限(天数)：90
     - **注意**：你的邮箱的诉讼保留期限已延期至下一个 90 天。 你将无法删除任何消息。
 
-8. 选择“保存”两次。 **注意：** 出现一条警告消息“保留设置可能需要 240 分钟才能生效”，单击该消息上的“确定”。
+1. 选择“保存”两次。 **注意：** 出现一条警告消息“保留设置可能需要 240 分钟才能生效”，单击该消息上的“确定”。
 
 你已成功激活环境中邮箱的邮箱保留，并阻止了所有具有访问权限的人永久删除邮箱中的任何内容。 应用保留最多需要 4 小时。  可以立即继续执行下一个任务。
 
@@ -41,25 +45,29 @@ ms.locfileid: "137899360"
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-2. 在 Microsoft Edge 中，导航到 https://www.office.com 并以 Joni Sherman 的身份登录到 Microsoft 365  。
+1. 在 Microsoft Edge 中，导航到 https://www.office.com 并以 Joni Sherman 的身份登录到 Microsoft 365  。
 
-3. 在 Microsoft Office 365 登陆页面上，选择左上角的“应用启动器”图标（该图标带有九个点），然后从子菜单中选择“SharePoint”。
+1. 如果显示欢迎使用屏幕，请关闭它。 如果显示 Office 365 应用通知，同样请关闭它。
 
-4. 在 SharePoint 登陆页面上，选择“Benefits @ Contoso”SharePoint 网站。
+1. 在 Microsoft Office 365 登陆页面上，选择左上角的“应用启动器”图标（该图标带有九个点），然后从子菜单中选择“SharePoint”。
 
-5. 在左侧导航窗格中，选择“文档”。
+1. 如果出现“欢迎来到 SharePoint 起始页”，请关闭它。
 
-6. 通过选中 Vacation Policies.pptx 文件前面的复选框来将其突出显示。
+1. 在 SharePoint 登陆页面上，选择“Benefits @ Contoso”SharePoint 网站。
 
-7. 在操作栏中选择“删除”。
+1. 在左侧导航窗格中，选择“文档”。
 
-8. 在“是否删除?”对话框中，选择“删除” 。
+1. 通过选中 Vacation Policies.pptx 文件前面的复选框来将其突出显示。
 
-9. 在左侧导航窗格中，选择“回收站”，然后通过选中 Vacation Policies.pptx 文件前面的复选框来将其突出显示 。
+1. 在操作栏中选择“删除”。
 
-10. 在顶部操作栏中，选择“还原”。
+1. 在“是否删除?”对话框中，选择“删除” 。
 
-11. 在左侧导航窗格中，选择“文档”并查看文件是否已还原。
+1. 在左侧导航窗格中，选择“回收站”，然后通过选中 Vacation Policies.pptx 文件前面的复选框来将其突出显示 。
+
+1. 在顶部操作栏中，选择“还原”。
+
+1. 在左侧导航窗格中，选择“文档”并查看文件是否已还原。
 
 你已经成功从 SharePoint 网站恢复了已删除的文档。
 
