@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c392b72c3f9f6a871765ebcc25baecc167889bb0
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+ms.openlocfilehash: fbf7dad2bb533f78527990015c8531be22894b9d
+ms.sourcegitcommit: f7259dd59786836bf2ccb7f3c1a5ef37ec745a4a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154872"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "147629907"
 ---
 # <a name="lab-3---exercise-4---configure-event-based-retention"></a>实验室 3 - 练习 4 - 配置基于事件的保留
 
@@ -133,7 +133,7 @@ ms.locfileid: "147154872"
 
 1. 将新出现的“资产 ID”字段设置为“BostonOfficeLaunch”，然后选择右上角的“X”关闭右侧菜单  。
 
-你已成功将标签和资产 ID 分配给文档。 当触发资产 ID 1234 的项目关闭事件时，这将激活 5 年的保留期。
+你已成功将标签和资产 ID 分配给文档。 当触发资产 ID BostonOfficeLaunch 的项目关闭事件时，这将激活 5 年的保留期。
 
 ### <a name="task-5--create-specific-event"></a>任务 5 - 创建特定事件
 
