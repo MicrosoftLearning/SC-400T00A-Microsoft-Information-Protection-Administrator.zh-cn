@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: 4ecaab0f83254b251ba9bbb5675fb7eded661f2f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 练习 5 - 管理敏感度标签
+  module: Module 1 - Implement Information Protection
+ms.openlocfilehash: 07d4535e85a81edb22a7bd5f8831d9bfcb488732
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155310"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694972"
 ---
 # <a name="lab-1---exercise-5---manage-sensitivity-labels"></a>实验室 1 - 练习 5 - 管理敏感度标签
 
-在本实验室中，你将扮演 Contoso Ltd. 的系统管理员 Joni Sherman。 你的组织位于德国的雷德尼茨亨巴赫，目前打算实现一个敏感度计划，以确保人力资源部门的所有员工文档都已使用敏感度标签标记为组织信息保护策略的一部分。
+在本实验室中，你将扮演 Contoso Ltd. 的系统管理员 Joni Sherman。你的组织位于德国的雷德尼茨亨巴赫，目前打算实现一个敏感度计划，以确保人力资源部门的所有员工文档都已使用敏感度标签标记为组织信息保护策略的一部分。
 
 ### <a name="task-1-enable-support-for-sensitivity-labels"></a>任务 1 启用对敏感度标签的支持
 
