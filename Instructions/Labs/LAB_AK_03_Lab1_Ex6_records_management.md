@@ -1,12 +1,15 @@
 ---
-ms.openlocfilehash: ee57f2ea92721329bdb25ad524751f54c31cefd6
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 练习 6 - 配置记录管理
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: 1d2e4a3980efe3d13bc98209d266b40c62a18871
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154874"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694930"
 ---
-# <a name="lab-3---exercise-5---configure-records-management"></a>实验室 3 - 练习 5 - 配置记录管理
+# <a name="lab-3---exercise-6---configure-records-management"></a>实验室 3 - 练习 6 - 配置记录管理
 
 在本练习中，假设你是 Contoso Ltd. 的合规性管理员 Joni Sherman。针对你的组织的法规要求包括在公司讨论保险成本时拥有员工提供的健康保险信息的明确副本。 你的任务是确保保留记录。
 

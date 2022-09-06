@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: 1fa5f311f0d3dc9f46e345da75ef20870ab88a3f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 练习 2 - 管理 Microsoft Purview 邮件加密
+  module: Module 1 - Implement Information Protection
+ms.openlocfilehash: ef12c02196f9da1f7093790a0341143703e413b4
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155313"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694954"
 ---
 # <a name="lab-1---exercise-2---manage-office-365-message-encryption"></a>实验室 1 - 练习 2 - 管理 Office 365 邮件加密
 

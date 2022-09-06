@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: fbf7dad2bb533f78527990015c8531be22894b9d
-ms.sourcegitcommit: f7259dd59786836bf2ccb7f3c1a5ef37ec745a4a
+lab:
+  title: 练习 4 - 配置基于事件的保留
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: bc2419ca627eb18ee16fcd6cf2f9ff59a079521e
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "147629907"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694951"
 ---
 # <a name="lab-3---exercise-4---configure-event-based-retention"></a>实验室 3 - 练习 4 - 配置基于事件的保留
 

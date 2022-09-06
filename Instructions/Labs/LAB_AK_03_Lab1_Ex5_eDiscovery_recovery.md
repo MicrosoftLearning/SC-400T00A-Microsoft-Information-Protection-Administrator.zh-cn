@@ -1,12 +1,15 @@
 ---
-ms.openlocfilehash: 7919442bc520d131fa869e44556eff1276b9c880
-ms.sourcegitcommit: c78ddb966a982b76e7f46fc17a42847f76d6e1a0
+lab:
+  title: 练习 5 - 使用电子数据展示进行恢复
+  module: Module 3 - Implement Data Lifecycle and Records Management
+ms.openlocfilehash: 18e5cc590d10cdd35f2986a989b58fa07e4d472a
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147154873"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694948"
 ---
-# <a name="lab-3---exercise-4---use-ediscovery-for-recovery"></a>实验室 3 - 练习 4 - 使用电子数据展示进行恢复
+# <a name="lab-3---exercise-5---use-ediscovery-for-recovery"></a>实验室 3 - 练习 5 - 使用电子数据展示进行恢复
 
 在本练习中，假设你是 Contoso Ltd. 的合规性管理员 Joni Sherman。 你的组织位于德克萨斯州，并且想要实现保留策略以遵守当地法律。 Uniform Preservation of Private Business Records Act 规定，记录可以在三年后销毁而不会构成违法（特例除外），为了遵守该法律，组织制定了一个保留计划，打算将组织内的所有项都保留三年。
 

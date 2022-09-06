@@ -1,10 +1,13 @@
 ---
-ms.openlocfilehash: 55e33ed310c3e272cfd1f9812b99bb8df2c5d53f
-ms.sourcegitcommit: 87981d92cddd039f65cba07c3f57ea6a12dd251a
+lab:
+  title: 练习 3 - 管理 DLP 报告
+  module: Module 2 - Implement Data Loss Prevention
+ms.openlocfilehash: 746ee7009944164eea61823432a6b81f0d03cbc3
+ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "147155292"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "147694945"
 ---
 # <a name="lab-2---exercise-3---manage-dlp-reports"></a>实验室 2 - 练习 3 - 管理 DLP 报告
 
