@@ -2,13 +2,8 @@
 lab:
   title: 练习 1 - 管理 DLP 策略
   module: Module 2 - Implement Data Loss Prevention
-ms.openlocfilehash: 7628bce3497a693da7ad73585dd446f0319277a5
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694975"
 ---
+
 # <a name="lab-2---exercise-1---manage-dlp-policies"></a>实验室 2 - 练习 1 - 管理 DLP 策略
 
 你是 Joni Sherman，Contoso Ltd. 新上任的合规性管理员，负责配置公司的 Microsoft 365 租户以防止数据丢失。 Contoso Ltd. 是美国的一家提供驾驶指导服务的公司，你需要确保敏感客户信息不会泄露到组织外部。
@@ -248,5 +243,3 @@ ms.locfileid: "147694975"
 1. 在“查看并创建策略”页面上，查看策略设置并选择“创建策略” 。
 
 你现在已经创建了一个 PowerPlatform DLP 策略，该策略阻止用户创建涉及 SharePoint Online 连接器和任何非 SalesForce 连接器的流。
-
-# <a name="proceed-to-lab-2---exercise-2"></a>继续进行实验室 2 - 练习 2

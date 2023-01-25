@@ -2,13 +2,8 @@
 lab:
   title: 练习 2 - 管理 Microsoft Purview 邮件加密
   module: Module 1 - Implement Information Protection
-ms.openlocfilehash: ef12c02196f9da1f7093790a0341143703e413b4
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694954"
 ---
+
 # <a name="lab-1---exercise-2---manage-office-365-message-encryption"></a>实验室 1 - 练习 2 - 管理 Office 365 邮件加密
 
 Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Microsoft 365 内置 Office 365 邮件加密 (OME)。 为此，她将修改默认模板并创建一个新的品牌模板，该模板将分配给其中一位试点用户。 然后，试点用户将使用其帐户测试 OME 功能。
@@ -84,7 +79,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 1. 运行以下 cmdlet 以查看默认的 OME 配置：
 
     ```powershell
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
 1. 查看设置，并确认 SocialIdSignIn 参数设置为 True。
@@ -100,7 +95,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 1. 再次检查默认配置，并验证 SocialIdSignIn 参数现在是否已设置为 False。
 
     ```powershell
-    Get-OMEConfiguration -Identity "OME Configuration" |fl
+    Get-OMEConfiguration -Identity "OME Configuration" | fl
     ```
 
 1. 注意结果应显示 SocialIDSignIn 设置为 False。 使 PowerShell 窗口和客户端保持打开状态。
@@ -111,7 +106,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 必须确认在从租户的用户收到受 Office 365 消息加密保护的消息时不会为外部收件人显示任何社交 ID 对话框，并且他们需要在访问加密内容时使用 OTP。
 
-1.  将客户端 1 VM (LON-CL1) 保持为打开状态，并使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)。
+1. 将客户端 1 VM (LON-CL1) 保持为打开状态，并使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)。
 
 1. 请确保已安装所有可用的 Windows 更新，并且客户端不需要重启即可完成更新安装。
 
@@ -133,13 +128,15 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 1. 在“收件人”行中，输入不在租户域中的个人或其他第三方电子邮件地址。 在主题行中输入“机密邮件”，并在正文中输入“我的超级机密邮件。”  。
 
-1. 在顶部窗格中，选择“加密”以加密邮件。 在成功加密消息后，应会看到一条显示“加密: 此消息已加密。 收件人无法删除加密”的通知。
+1. 在顶部窗格中，选择“选项”，然后选择“加密”以加密邮件 。 在成功加密消息后，应会看到一条显示“加密: 此消息已加密。 收件人无法删除加密”的通知。
+
+      ![“加密”设置的屏幕截图](../Media/OptionsEncrypt.png)
 
 1. 选择“发送”发送该消息。
 
-1. 登录到个人电子邮件帐户，然后打开来自 Lynne Robbins 的邮件。 如果将此电子邮件发送到 Microsoft 帐户（如 @outlook.com），则系统会自动处理加密，并自动显示该邮件。 如果将电子邮件发送到其他电子邮件服务（如 @google.com），则可能必须执行以下步骤才能处理加密和阅读邮件。
+1. 登录到个人电子邮件帐户，然后打开来自 Lynne Robbins 的邮件。 如果将此电子邮件发送到 Microsoft 帐户（如 @outlook.com），则系统会自动处理加密，并自动显示该邮件。 如果将电子邮件发送到其他电子邮件服务（如 @gmail.com），则可能必须执行以下步骤才能处理加密和阅读邮件。
 
-    注意：你可能需要在垃圾邮件文件夹中查找来自 Lynne Robbins 的消息。
+    >注意：你可能需要在垃圾邮件文件夹中查找来自 Lynne Robbins 的消息。
 
 1. 选择“阅读邮件”。
 
@@ -240,5 +237,3 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 1. 查看包含自定义品牌信息的加密邮件。
 
 你已经成功测试了新的自定义 OME 模板。
-
-# <a name="proceed-to-lab-1---exercise-3"></a>继续进行实验室 1 - 练习 3

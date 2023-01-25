@@ -2,13 +2,8 @@
 lab:
   title: 练习 4 - 管理可训练的分类器
   module: Module 1 - Implement Information Protection
-ms.openlocfilehash: 5764991a7027bed7fb7807b697e182a78ce599db
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694978"
 ---
+
 # <a name="lab-1---exercise-4---manage-trainable-classifiers"></a>实验室 1 - 练习 4 - 管理可训练的分类器
 
 Contoso Ltd. 租户包含一个名为“销售和营销”的 SharePoint 网站集，将在未来用于存储一些与财务相关的文档和报表。 由于这些文档的性质，你需要创建一个可训练的分类器来识别和标记这些文件。 为此，你将激活自定义可训练的分类器并新建一个可训练的分类器。
@@ -176,5 +171,3 @@ Contoso Ltd. 租户包含一个名为“销售和营销”的 SharePoint 网站�
 1. 使浏览器窗口保持打开状态。
 
 你成功创建、训练和发布了自定义的可训练分类器，该分类器与 Contoso Ltd 的现有 SharePoint 网站中存储的文件匹配。
-
-# <a name="proceed-to-lab-1---exercise-5"></a>继续进行实验室 1 - 练习 5 
