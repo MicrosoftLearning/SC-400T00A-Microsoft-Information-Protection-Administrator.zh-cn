@@ -2,13 +2,9 @@
 lab:
   title: 练习 1 - 管理合规性角色
   module: Module 1 - Implement Information Protection
-ms.openlocfilehash: e1624cf474ee4cf220bfa6cea0de3e57d428cf4f
-ms.sourcegitcommit: 9e722a2a59bb313fe16f6aad41aac3ebe1e1eda4
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147693962"
 ---
+
+
 # <a name="lab-1---exercise-1---manage-compliance-roles"></a>实验室 1 - 练习 1 - 管理合规性角色
 
 假设你是 Joni Sherman，Contoso Ltd. 新聘请的合规性管理员，你需要为组织配置新的 Microsoft 365 租户以满足组织合规性要求。 Contoso Ltd. 是一家总部位于美国的公司，并在欧盟设有多家新的子公司，组织需要确保新 Microsoft 365 租户满足不同国家/地区的法律要求以及所在行业部门的法规要求。
@@ -20,8 +16,6 @@ ms.locfileid: "147693962"
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
 
 1. 请确保已安装所有可用的 Windows 更新，并且客户端不需要重启即可完成更新安装。
-
-    [//]: <> (安装最新的 OS 更新还会将 Edge 浏览器更新为执行此实验室所需的新 Chromium 版本。)
 
 1. 从任务栏打开 Microsoft Edge，当显示“欢迎使用 Microsoft Edge”窗口时，选择“不使用你的数据开始”，再选择“不使用此数据继续”，然后选择“确认并开始浏览”    。
 
@@ -41,11 +35,13 @@ ms.locfileid: "147693962"
 
 1. 在“活动用户”列表中，搜索并选择“Joni Sherman”，以打开右侧的设置窗格 。
 
-1.  在“帐户”选项卡下的设置中，滚动到“角色”并选择下面的“管理角色”  。
+1. 在“帐户”选项卡下的设置中，滚动到“角色”并选择下面的“管理角色”  。
+
+      ![“管理角色”选项的屏幕截图](../Media/ManageRoles.png)
 
 1. 当“管理管理员角色”窗格打开时，依次选择“管理中心访问权限”和“按类别全部显示”，然后向下滚动到“安全性和合规性”类别，并选择“合规性管理员”    。
 
-1.  选择“保存更改”以应用角色。 当窗格上方显示“管理员角色已更新”消息时，选择指向左侧的箭头返回 Joni 的用户记录。
+1. 选择“保存更改”以应用角色。 当窗格上方显示“管理员角色已更新”消息时，选择指向左侧的箭头返回 Joni 的用户记录。
 
 1. 单击右上角的“X”关闭显示 Joni Sherman 的帐户的窗格，返回到“活动用户”列表 。
 
@@ -82,5 +78,3 @@ ms.locfileid: "147693962"
 1. 熟悉不同的设置。 完成后，让浏览器窗口保持打开状态。
 
 你已成功切换到 Joni Sherman 的帐户，现在可以开始使用实验室。
-
-# <a name="proceed-to-lab-1---exercise-2"></a>继续进行实验室 1 - 练习 2

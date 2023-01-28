@@ -2,13 +2,8 @@
 lab:
   title: 练习 3 - 配置基于服务的保留
   module: Module 3 - Implement Data Lifecycle and Records Management
-ms.openlocfilehash: b531417b4335973f9c1e3ac0950f000fa1719eab
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694942"
 ---
+
 # <a name="lab-3---exercise-3---configure-service-based-retention"></a>实验室 3 - 练习 3 - 配置基于服务的保留
 
 你将扮演 Contoso Ltd 的合规管理员 Joni Sherman。法律部门要求你协助他们阻止心怀不满的员工删除公司数据。
@@ -73,5 +68,3 @@ ms.locfileid: "147694942"
 1. 在左侧导航窗格中，选择“文档”并查看文件是否已还原。
 
 你已经成功从 SharePoint 网站恢复了已删除的文档。
-
-# <a name="proceed-to-lab-3---exercise-4"></a>继续进行实验室 3 - 练习 4

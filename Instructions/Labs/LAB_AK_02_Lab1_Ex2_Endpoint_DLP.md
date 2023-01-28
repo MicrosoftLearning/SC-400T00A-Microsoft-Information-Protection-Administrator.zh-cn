@@ -191,5 +191,3 @@ lab:
 1. 验证“Microsoft Purview 扩展”是否可见并是否已激活。
 
 你已成功安装了 Chrome 浏览器，并向客户端添加了 Microsoft Purview 扩展。 现在可以像 Edge 浏览器一样使用 Chrome 浏览器来处理敏感数据，并且以前配置的终结点 DLP 策略在使用 Chrome 浏览器时也适用。
-
-# <a name="proceed-to-lab-2---exercise-3"></a>继续进行实验室 2 - 练习 3 

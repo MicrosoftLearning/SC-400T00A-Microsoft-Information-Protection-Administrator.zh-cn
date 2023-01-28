@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 4f7f7906c98ec1d248e3e6d7d6ee13cfb9c7d2b1
-ms.sourcegitcommit: 2e9e5dd78a50682b1afef130c7c566b7d929f854
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "137899389"
----
 # <a name="sc-400t00-microsoft-information-protection-administrator"></a>SC-400T00：Microsoft 信息保护管理员
 
 此存储库包括以下课程的实验室说明：
@@ -13,9 +5,9 @@ ms.locfileid: "137899389"
 - SC-400T00：Microsoft 信息保护管理员
  
 
-**[下载最新学生手册和 AllFiles 内容](../../releases/latest)**
+<!-- **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)** -->
 
-**你是 MCT 吗？** - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
+你是 MCT 吗？ - 查看 [MCT GitHub 用户指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 
 **需要手动生成实验室说明？** - [MicrosoftLearning/Docker-Build ](https://github.com/MicrosoftLearning/Docker-Build) 存储库中提供了说明
 
@@ -29,15 +21,17 @@ ms.locfileid: "137899389"
 
 - 讲师手册和 PowerPoint 仍将是教授课程内容的主要来源。
 
-- GitHub 上的这些文件适合与学生手册结合使用，不过在 GitHub 中作为中央存储库使用，因此 MCT 和课程作者可以获得一个用于共享最新实验室文件的共享源。
+<!-- - These files on GitHub are designed to be used in conjunction with the student handbook, but are in GitHub as a central repository so MCTs and course authors can have a shared source for the latest lab files. -->
 
 - 对于每次授课，建议培训师查看 GitHub 中的内容，了解是否为支持最新 Azure 或 Microsoft 365 服务而进行了更改，并获取最新文件来进行授课。
 
-## <a name="what-about-changes-to-the-student-handbook"></a>如何处理对学生手册的更改？
+<!--
+## What about changes to the student handbook?
 
-- 我们将按季度审核学员手册，并根据需要通过标准 MOC 版本通道进行更新。
+- We will review the student handbook on a quarterly basis and update through the normal MOC release channels as needed.
+-->
 
-## <a name="how-do-i-contribute"></a>如何做出贡献？
+## <a name="how-do-i-contribute"></a>如何参与内容编辑？
 
 - 任何 MCT 都可向 GitHub 存储库中的代码或内容提交拉取请求，Microsoft 和课程作者将根据需要进行分流并纳入内容和实验室代码的更改。
 

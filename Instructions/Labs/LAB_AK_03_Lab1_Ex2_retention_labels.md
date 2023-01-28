@@ -2,13 +2,8 @@
 lab:
   title: 练习 2 - 实现保留标签
   module: Module 3 - Implement Data Lifecycle and Records Management
-ms.openlocfilehash: da215e79c0e2bc22f385244dc668d5bf1cb521d2
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694936"
 ---
+
 # <a name="lab-3---exercise-2---implement-retention-labels"></a>实验室 3 - 练习 2 - 实现保留标签
 
 在本练习中，假设你是 Contoso Ltd. 的系统管理员 Joni Sherman。 你的组织位于英格兰萨德伯里，并具有保留财务文档的法律义务。 
@@ -266,5 +261,3 @@ ms.locfileid: "147694936"
 1. 如果该选项可用，请将“应用保留标签”设置为“增值税申报表和支持性文档” 。 由于发布保留标签可能需要一些时间，因此可能无法立即使用该选项，如果该选项不可用，请继续执行下一个任务。 稍后请随时返回到此任务，然后重试。
 
 你已成功将保留标签应用于 OneDrive 中的文档。
-
-# <a name="proceed-to-lab-3---exercise-3"></a>继续进行实验室 3 - 练习 3

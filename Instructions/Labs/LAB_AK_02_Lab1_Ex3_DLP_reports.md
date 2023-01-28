@@ -2,13 +2,8 @@
 lab:
   title: 练习 3 - 管理 DLP 报告
   module: Module 2 - Implement Data Loss Prevention
-ms.openlocfilehash: 746ee7009944164eea61823432a6b81f0d03cbc3
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694945"
 ---
+
 # <a name="lab-2---exercise-3---manage-dlp-reports"></a>实验室 2 - 练习 3 - 管理 DLP 报告
 
 你是 Joni Sherman，Contoso Ltd. 的合规性管理员，负责配置公司的 Microsoft 365 租户以防止数据丢失。 Contoso Ltd. 是美国的一家提供驾驶指导服务的公司，你需要确保敏感客户信息不会泄露到组织外部。 你已获悉新的合规官将帮助你查看 DLP 报告。
@@ -60,5 +55,3 @@ ms.locfileid: "147694945"
 1. 使客户端保持打开状态，用于完成最后一个练习。
 
 你现在验证了已配置访问权限，新的合规官可以在 Purview 门户中查看报告。
-
-## <a name="you-have-completed-the-lab-2-proceed-to-lab-3---exercise-1"></a>你已完成本实验室 2。 继续进行实验室 3 - 练习 1。

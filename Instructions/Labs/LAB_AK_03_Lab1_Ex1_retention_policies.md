@@ -2,13 +2,8 @@
 lab:
   title: 练习 1 - 配置保留策略
   module: Module 3 - Implement Data Lifecycle and Records Management
-ms.openlocfilehash: dc8282f424065a6c21ceac476f79a15dbf5ed149
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694933"
 ---
+
 # <a name="lab-3---exercise-1---configure-retention-policies"></a>实验室 3 - 练习 1 - 配置保留策略
 
 在本练习中，假设你是 Contoso Ltd. 的系统管理员 Joni Sherman。 你的组织位于德克萨斯州，并且想要实现保留策略以遵守州法律，该法律规定，记录可以在在三年后删除，而不会构成违法。 
@@ -127,7 +122,7 @@ ms.locfileid: "147694933"
 1. 运行以下 cmdlet 为所有位置（Teams 除外）创建第一个保留策略：
 
     ```powershell
-    New-RetentionCompliancePolicy -Name "Company Wide PS" -ExchangeLocation All -ModernGroupLocation All -PublicFolderLocation All -SharePointLocation All -OneDriveLocation All
+    New-RetentionCompliancePolicy -Name "Company Wide PS" -ExchangeLocation All -ModernGroupLocation All -SharePointLocation All -OneDriveLocation All
     ```
 
 1. 运行以下 cmdlet 以基于修改的日期设置保留期（以天为单位）：
@@ -252,5 +247,3 @@ ms.locfileid: "147694933"
     - Enabled: True
     - Mode: Enforce
     - DistributionStatus: Success
-# <a name="proceed-to-lab-3---exercise-2"></a>继续进行实验室 3 - 练习 2
-

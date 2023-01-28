@@ -2,13 +2,8 @@
 lab:
   title: 练习 5 - 使用电子数据展示进行恢复
   module: Module 3 - Implement Data Lifecycle and Records Management
-ms.openlocfilehash: 18e5cc590d10cdd35f2986a989b58fa07e4d472a
-ms.sourcegitcommit: 53488624251b6cf8f79f2d1ff561e3f334764821
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "147694948"
 ---
+
 # <a name="lab-3---exercise-5---use-ediscovery-for-recovery"></a>实验室 3 - 练习 5 - 使用电子数据展示进行恢复
 
 在本练习中，假设你是 Contoso Ltd. 的合规性管理员 Joni Sherman。 你的组织位于德克萨斯州，并且想要实现保留策略以遵守当地法律。 Uniform Preservation of Private Business Records Act 规定，记录可以在三年后销毁而不会构成违法（特例除外），为了遵守该法律，组织制定了一个保留计划，打算将组织内的所有项都保留三年。
@@ -159,5 +154,3 @@ ms.locfileid: "147694948"
 1. 在 PowerShell 中，键入表示“是”的 Y 并按 Enter 键以确认操作 。
 
 你已经成功创建了新的内容搜索来查找特定电子邮件，然后使用清除操作从用户的邮箱中删除了钓鱼邮件。 只能以“组织管理”角色的成员身份运行清除操作，而“合规性管理员”不属于该角色。
-
-# <a name="proceed-to-lab-3---exercise-6"></a>继续进行实验室 3 - 练习 6
