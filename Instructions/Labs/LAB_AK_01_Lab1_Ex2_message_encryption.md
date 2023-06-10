@@ -4,11 +4,11 @@ lab:
   module: Module 1 - Implement Information Protection
 ---
 
-# <a name="lab-1---exercise-2---manage-office-365-message-encryption"></a>实验室 1 - 练习 2 - 管理 Office 365 邮件加密
+# 实验室 1 - 练习 2 - 管理 Office 365 邮件加密
 
 Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Microsoft 365 内置 Office 365 邮件加密 (OME)。 为此，她将修改默认模板并创建一个新的品牌模板，该模板将分配给其中一位试点用户。 然后，试点用户将使用其帐户测试 OME 功能。
 
-### <a name="task-1--verify-azure-rms-functionality"></a>任务 1 - 验证 Azure RMS 功能
+## 任务 1 - 验证 Azure RMS 功能
 
 在此任务中，你将安装 Exchange Online PowerShell 模块并在 Joni Sherman 的上下文中验证租户的正确 Azure RMS 功能，Joni Sherman 在上一练习中被指定为合规性管理员。
 
@@ -70,7 +70,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已成功安装 Exchange Online PowerShell 模块，将其连接到租户，并验证了 Azure RMS 的正确功能。
 
-### <a name="task-2--modify-default-ome-template"></a>任务 2 - 修改默认 OME 模板
+## 任务 2 - 修改默认 OME 模板
 
 组织中要求限制对外部标识提供者（例如 Google 或 Facebook）的信任。 由于默认情况下，这些用于访问受 OME 保护的邮件的社交 ID 处于激活状态，因此需要在组织中停用所有用户的社交 ID。
 
@@ -102,7 +102,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已成功停用 Office 365 邮件加密中的外部标识提供者（例如 Google 和 Facebook）。
 
-### <a name="task-3--test-default-ome-template"></a>任务 3 - 测试默认 OME 模板
+## 任务 3 - 测试默认 OME 模板
 
 必须确认在从租户的用户收到受 Office 365 消息加密保护的消息时不会为外部收件人显示任何社交 ID 对话框，并且他们需要在访问加密内容时使用 OTP。
 
@@ -154,7 +154,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已成功使用已停用的社交 ID 测试了修改后的默认 OME 模板。
 
-### <a name="task-4--create-custom-branding-template"></a>任务 4 - 创建自定义品牌模板
+## 任务 4 - 创建自定义品牌模板
 
 组织财务部门发送的受保护邮件需要特殊的品牌信息，包括自定义的简介和正文文本，以及页脚中的“免责声明”链接。 财务邮件也应在 7 天后过期。 在此任务中，你将创建新的自定义 OME 配置以及传输规则，以将 OME 配置应用于财务部门发送的所有邮件。
 
@@ -208,7 +208,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已经成功创建了新的传输规则，当财务部门的成员向外部收件人发送邮件时，该规则将自动应用自定义 OME 模板。
 
-### <a name="task-5--test-the-custom-branding-template"></a>任务 5 - 测试自定义品牌模板
+## 任务 5 - 测试自定义品牌模板
 
 要验证新的自定义 OME 配置，需要再次使用财务团队成员 Lynne Robbins 的帐户。
 
