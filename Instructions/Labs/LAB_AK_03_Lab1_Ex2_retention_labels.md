@@ -4,13 +4,13 @@ lab:
   module: Module 3 - Implement Data Lifecycle and Records Management
 ---
 
-# <a name="lab-3---exercise-2---implement-retention-labels"></a>实验室 3 - 练习 2 - 实现保留标签
+# 实验室 3 - 练习 2 - 实现保留标签
 
 在本练习中，假设你是 Contoso Ltd. 的系统管理员 Joni Sherman。 你的组织位于英格兰萨德伯里，并具有保留财务文档的法律义务。 
 
 财务部门已制定保留计划，打算对增值税 (VAT) 申报表文档（包括支持性文档和信用卡收据）设置保留标签。
  
-### <a name="task-1--create-retention-labels"></a>任务 1 - 创建保留标签
+## 任务 1 - 创建保留标签
 
 在此任务中，你将创建两个保留标签，一个可分配给包含增值税申报表的文档和电子邮件，另一个可应用于信用卡收据。
 
@@ -64,7 +64,7 @@ lab:
 
 你已成功为保留期为 7 年的增值税申报表创建了保留标签，并为保留期为 3 年的信用卡收据创建了保留标签。
 
-### <a name="task-2--publish-retention-labels"></a>任务 2 - 发布保留标签
+## 任务 2 - 发布保留标签
 
 执行任务 1 之后，你将立即发布增值税申报表保留标签，以便财务用户可以将已发布的标签应用于 Exchange 电子邮件和 Sharepoint 文档中的文档。
 
@@ -90,10 +90,10 @@ lab:
 
 1. 输入以下信息：
 
-    - “Exchange 电子邮件”位置 -“状态”：启用
-    - “SharePoint 网站”位置 -“状态”：启用
+    - Exchange 邮箱位置 - 状态：启用 
+    - SharePoint 经典网站和通信网站位置 - 状态：启用 
     - “OneDrive 帐户”位置 -“状态”：启用
-    - “Microsoft Office 365 组”位置 -“状态”：关闭  
+    - Microsoft 365 组邮箱和网站位置 - 状态：禁用   
 
 1. 选择“下一步”按钮。
 
@@ -108,7 +108,7 @@ lab:
 
 你已成功发布增值税申报表和支持性文档的保留标签。
 
-### <a name="task-3--publish-auto-apply-retention-labels"></a>任务 3 - 发布自动应用保留标签
+## 任务 3 - 发布自动应用保留标签
 
 执行任务 1 之后，现在将自动应用信用卡收据保留标签，以便保留信息。
 
@@ -149,15 +149,17 @@ lab:
 
 1. 在“选择要创建的保留策略的类型”页面上，选择“静态”项，然后选择“下一步”  。 
 
-1. 在“选择应用策略的位置”页面上，启用以下选项 ：“Exchange 电子邮件”、“OneDrive 帐户”、“SharePoint 网站”和“Microsoft 365 组”，然后选择“下一步” 。
+1. 在“选择应用策略的位置”页上，启用以下选项：“Exchange 邮箱”、“SharePoint 经典网站和通信网站”、“OneDrive 帐户”以及“Microsoft 365 组邮箱和网站”，然后选择“下一步”   。
 
 1. 在“选择要自动应用的标签”页面上，选择“下一步” 。
+
+1. 在“决定是测试还是运行策略”中，选择“启用策略”，然后选择“下一步”  。
 
 1. 在“查看并完成”页上，选择“提交”按钮 。  创建策略后，选择“完成”。
 
 你已经成功发布了自动应用的保留标签。 在接下来的 7 天内，所有包含信用卡详细信息的文档将自动标上已发布的标签“信用卡收据”，这些项的保留期将为 3 年。
 
-### <a name="task-4--work-with-retention-labels-in-outlook-emails"></a>任务 4 - 在 Outlook 电子邮件中使用保留标签
+## 任务 4 - 在 Outlook 电子邮件中使用保留标签
 
 在此任务中，你将为 Outlook 电子邮件分配保留标签
 
@@ -179,7 +181,7 @@ lab:
 
 你已成功将保留标签应用于 Outlook 电子邮件。
 
-### <a name="task-5--work-with-retention-labels-for-outlook-folders"></a>任务 5 - 在 Outlook 文件夹中使用保留标签
+## 任务 5 - 在 Outlook 文件夹中使用保留标签
 
 在此任务中，你将为 Outlook 文件夹分配保留标签。
 
@@ -209,7 +211,7 @@ lab:
 
 你已成功将保留标签应用于 Outlook 文件夹。
 
-### <a name="task-6--work-with-retention-labels-in-sharepoint"></a>任务 6 - 在 SharePoint 中使用保留标签
+## 任务 6 - 在 SharePoint 中使用保留标签
 
 在此任务中，你将对 SharePoint 文档库中的文档应用保留标签。
 
@@ -230,7 +232,7 @@ lab:
 
 1. 在 CAS 文件夹中，突出显示（但不要选择）Blog Post preview.docx 文档
 
-1. 对于突出显示的文档，选择垂直的“...”按钮。  将鼠标悬停在“更多”选项上。
+1. 对于突出显示的文档，选择水平“...”按钮。  将鼠标悬停在“更多”选项上。
 
 1. 从展开的菜单中，选择“合规性详细信息”按钮。
 
@@ -240,7 +242,7 @@ lab:
 
 你已成功将保留标签应用于 SharePoint 中的文档。
 
-### <a name="task-7--work-with-retention-labels-in-onedrive"></a>任务 7 - 在 OneDrive 中使用保留标签
+## 任务 7 - 在 OneDrive 中使用保留标签
 
 在此任务中，你将向 OneDrive 中的文档应用保留标签。
 
