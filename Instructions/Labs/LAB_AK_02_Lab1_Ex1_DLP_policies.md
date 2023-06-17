@@ -3,12 +3,19 @@ lab:
   title: 练习 1 - 管理 DLP 策略
   module: Module 2 - Implement Data Loss Prevention
 ---
+## WWL 租户 - 使用条款
 
-# <a name="lab-2---exercise-1---manage-dlp-policies"></a>实验室 2 - 练习 1 - 管理 DLP 策略
+如果在讲师引导式培训过程中向你提供租户，请注意，提供租户旨在支持讲师引导式培训中的动手实验室。
+
+租户不应共享或用于动手实验室以外的用途。 本课程使用的租户为试用租户，课程结束后无法使用或访问，不符合扩展条件。
+
+租户不得转换为付费订阅。 在本课程中获得的租户仍然是 Microsoft Corporation 的财产，我们保留随时获取访问权限和收回的权利。
+
+# 实验室 2 - 练习 1 - 管理 DLP 策略
 
 你是 Joni Sherman，Contoso Ltd. 新上任的合规性管理员，负责配置公司的 Microsoft 365 租户以防止数据丢失。 Contoso Ltd. 是美国的一家提供驾驶指导服务的公司，你需要确保敏感客户信息不会泄露到组织外部。
 
-### <a name="task-1--create-a-dlp-policy-in-test-mode"></a>任务 1 - 在测试模式下创建 DLP 策略
+## 任务 1 - 在测试模式下创建 DLP 策略
 
 在本练习中，你将在 Microsoft Purview 门户中创建数据丢失防护策略以防止敏感数据被用户共享。 当你的用户想共享包含信用卡信息的内容时，你创建的 DLP 策略会向他们发出通知，并让他们提供发送此信息的正当理由。 由于你目前不想用户被阻止操作影响，所以将在测试模式下实现策略。
 
@@ -70,7 +77,7 @@ lab:
 
 你现在已创建了一个 DLP 策略，该策略可扫描 Microsoft Teams 聊天和频道中的信用卡号，允许用户提供业务理由来替代此策略。
 
-### <a name="task-2---modify-a-dlp-policy"></a>任务 2 - 修改 DLP 策略
+## 任务 2 - 修改 DLP 策略
 
 在本任务中，你将修改在上一步中创建的现有 DLP 策略以扫描电子邮件，查看是否存在信用卡信息，并在用户尝试在电子邮件中共享此内容时告知用户。
 
@@ -92,7 +99,7 @@ lab:
 
 你已经修改了现有的 DLP 策略，并更改了它扫描内容的位置。
 
-### <a name="task-3---create-a-dlp-policy-in-powershell"></a>任务 3 - 在 PowerShell 中创建 DLP 策略
+## 任务 3 - 在 PowerShell 中创建 DLP 策略
 
 在本任务中，你将使用 PowerShell 创建一个 DLP 策略来保护 Contoso EmployeeID，并防止这些 ID 在 Exchange 中被共享。 如果用户要发送的电子邮件中包含 Contoso EmployeeID，系统则会提示用户他们正在尝试共享敏感数据，并且将阻止邮件发送操作。
 
@@ -126,7 +133,7 @@ lab:
 
 你已经使用 PowerShell 创建了一个在 Exchange 中扫描 Contoso EmpoloyeeID 的 DLP 策略。
 
-### <a name="task-4---activate-a-policy-in-test-mode"></a>任务 4 - 在测试模式下激活策略
+## 任务 4 - 在测试模式下激活策略
 
 在本任务中，你将激活在测试模式中创建的信用卡信息 DLP 策略，使该策略执行其保护操作。
 
@@ -146,7 +153,7 @@ lab:
 
 你已成功激活该 DLP 策略。 如果策略检测到有人试图共享信用卡信息，它将阻止该操作，并允许用户提供业务正当理由来覆盖该阻止操作。
 
-### <a name="task-5---modify-policy-priority"></a>任务 5 - 修改策略优先级
+## 任务 5 - 修改策略优先级
 
 在创建两个 DLP 策略之后，你希望确保限制性更高的策略在处理时能得到比限制性较低的策略更高的优先级。 因此，你需要将 EmployeeID DLP 策略移动至更高的优先级。
 
@@ -164,7 +171,7 @@ lab:
 
 你已成功修改 DLP 策略的优先级。 如果两个策略匹配到相同的内容，则将执行高优先级策略的操作。
 
-### <a name="task-6---enable-file-monitoring-in-microsoft-defender-for-cloud-apps"></a>任务 6 - 在 Microsoft Defender for Cloud Apps 中启用文件监视
+## 任务 6 - 在 Microsoft Defender for Cloud Apps 中启用文件监视
 
 你需要使用 Microsoft Defender for Cloud Apps 中的文件策略来保护 OneDrive 和 SharePoint Online 位置中的文件。 在创建文件策略之前，需要启用文件监视，从而让 Microsoft Defender for Cloud Apps 扫描组织中的文件。
 
@@ -182,7 +189,7 @@ lab:
 
 你已成功在 Microsoft Defender for Cloud Apps 中启用了文件监视，现在可以使用文件策略扫描文件，以查看是否存在敏感内容。
 
-### <a name="task-7---create-file-policy-for-microsoft-defender-for-cloud-apps"></a>任务 7 - 为 Microsoft Defender for Cloud Apps 创建文件策略
+## 任务 7 - 为 Microsoft Defender for Cloud Apps 创建文件策略
 
 在本任务中，你需要在 Microsoft Defender for Cloud Apps 中创建一个文件策略，用于扫描 OneDrive 和 SharePoint Online 中的文件，并在共享文件时自动隔离包含信用卡信息的文件。
 
@@ -218,7 +225,7 @@ lab:
 
 你现在已经创建了一个文件策略，该策略将持续扫描保存在 OneDrive 和 SharePoint 中的文件，以查看是否存在信用卡信息，并在组织内部共享这些文件时隔离它们。
 
-### <a name="task-8---create-a-dlp-policy-for-powerplatform"></a>任务 8 - 为 PowerPlatform 创建 DLP 策略
+## 任务 8 - 为 PowerPlatform 创建 DLP 策略
 
 你的公司使用 PowerAutomate 流在 SharePoint Online 和 SalesForce 之间共享数据。 在本任务中，你将为 PowerPlatform 创建一个 DLP 策略，该策略允许现有的流继续工作，但会阻止创建将在 SharePoint Online 和定义为非业务类的应用之间共享数据的流。
 

@@ -4,11 +4,11 @@ lab:
   module: Module 3 - Implement Data Lifecycle and Records Management
 ---
 
-# <a name="lab-3---exercise-5---use-ediscovery-for-recovery"></a>实验室 3 - 练习 5 - 使用电子数据展示进行恢复
+# 实验室 3 - 练习 5 - 使用电子数据展示进行恢复
 
 在本练习中，假设你是 Contoso Ltd. 的合规性管理员 Joni Sherman。 你的组织位于德克萨斯州，并且想要实现保留策略以遵守当地法律。 Uniform Preservation of Private Business Records Act 规定，记录可以在三年后销毁而不会构成违法（特例除外），为了遵守该法律，组织制定了一个保留计划，打算将组织内的所有项都保留三年。
 
-### <a name="task-1--create-ediscovery-case"></a>任务 1 - 创建电子数据展示事例
+## 任务 1 - 创建电子数据展示事例
 
 在本练习中，你将创建电子数据展示事例并开始搜索 Megan Bowen 发送的包含标记 8 项目相关信息的邮件。 法律部门要求提供此信息以进行合规性审查。
 
@@ -44,7 +44,7 @@ lab:
 
 你已经成功创建了电子数据展示案件，并搜索了 Megan Bowen 发送或接收的所有包含标记 8 项目相关信息的邮件。
 
-### <a name="task-2--assign-records-management-and-ediscovery-manager-permissions"></a>任务 2 - 分配记录管理和电子数据展示管理员权限
+## 任务 2 - 分配记录管理和电子数据展示管理员权限
 
 在此任务中，你将准备把在任务 1 中发现的数据导出到 PST 文件中，以便将该文件提供给法律部门。 首先，需要将“记录管理”角色分配给合规性管理员， 否则，他们将无法导出搜索结果。
 
@@ -80,7 +80,7 @@ lab:
 
 你已成功为合规性管理员授予了导出搜索结果和执行记录管理任务的权限。 可能需要长达 60 分钟的时间才能将权限应用到用户，但你可以继续执行下一个任务。
 
-### <a name="task-3--export-data-from-ediscovery-case"></a>任务 3 - 从电子数据展示案件中导出数据
+## 任务 3 - 从电子数据展示案件中导出数据
 
 在此任务中，你将准备导出在任务 1 中发现的数据，以便可以将其提供给法律部门。  请记住，权限可能需要 60 分钟才会在租户中可用。
 
@@ -117,7 +117,7 @@ lab:
 
 你已成功导出发现的数据。
 
-### <a name="task-4--perform-search--purge-on-mailboxes"></a>任务 4 - 对邮箱执行搜索和清除操作
+## 任务 4 - 对邮箱执行搜索和清除操作
 
 一项调查显示，用户收到一些钓鱼邮件，你的任务是删除环境中所有邮箱中的钓鱼邮件。
 

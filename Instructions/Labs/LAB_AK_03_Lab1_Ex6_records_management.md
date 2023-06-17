@@ -4,17 +4,17 @@ lab:
   module: Module 3 - Implement Data Lifecycle and Records Management
 ---
 
-# <a name="lab-3---exercise-6---configure-records-management"></a>实验室 3 - 练习 6 - 配置记录管理
+# 实验室 3 - 练习 6 - 配置记录管理
 
 在本练习中，假设你是 Contoso Ltd. 的合规性管理员 Joni Sherman。针对你的组织的法规要求包括在公司讨论保险成本时拥有员工提供的健康保险信息的明确副本。 你的任务是确保保留记录。
 
-### <a name="task-1--create-file-plan-labels"></a>任务 1 - 创建文件计划标签
+## 任务 1 - 创建文件计划标签
 
 在此任务中，你将创建文件计划标签，人力资源部门可以利用该标签来标记包含雇员受雇时所需提供的健康保险信息的内容。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。 
+1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com/。 
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com/。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格中，选择“记录管理” 。
 
@@ -50,7 +50,7 @@ lab:
 
 你已成功使用文件计划创建了保留标签，该保留标签可防止所有带有标签的文档在 7 年内被删除，并且在保留期结束时，记录会自动删除。
 
-### <a name="task-2--publish-labels"></a>任务 2 - 发布标签
+## 任务 2 - 发布标签
 
 在此任务中，你将发布标签，以便人力资源部门的用户可将其应用于包含健康保险信息的内容。
 
@@ -83,7 +83,7 @@ lab:
 
 你成功开始了发布包含记录的保留标签的过程。 发布标签最多可能需要 24 小时。 标签发布后，人力资源部门可以使用它来标记包含健康保险信息的文件，他们需要对其进行记录。  可以立即继续执行下一个任务。
 
-### <a name="task-3--work-with-records"></a>任务 3 - 处理记录
+## 任务 3 - 处理记录
 
 在此任务中，你将把已发布的记录标签分配给 Outlook 中的电子邮件，然后查看应用记录的结果。 可能需要等待 24 小时的发布延迟。
 

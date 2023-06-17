@@ -4,11 +4,11 @@ lab:
   module: Module 2 - Implement Data Loss Prevention
 ---
 
-# <a name="lab-2---exercise-2---manage-endpoint-dlp"></a>实验室 2 - 练习 2 - 管理终结点 DLP
+# 实验室 2 - 练习 2 - 管理终结点 DLP
 
 你是 Joni Sherman，Contoso Ltd. 新上任的合规性管理员，负责配置公司的 Microsoft 365 租户以防止数据丢失。 Contoso Ltd. 是美国的一家提供驾驶指导服务的公司，你需要确保敏感客户信息不会泄露到组织外部。 所以，你决定不仅要实现 Microsoft 365 DLP 策略，还要将此保护扩展到组织中的设备。
 
-### <a name="task-1--enable-device-onboarding"></a>任务 1 - 启用设备加入
+## 任务 1 - 启用设备加入
 
 在本任务中，你将为组织启用设备加入。
 
@@ -26,7 +26,7 @@ lab:
 
 你现在已经启用了设备加入，可以开始加入 Windows 10 设备以使用终结点 DLP 策略对其进行保护。 启用该功能的过程可能需要长达 30 分钟的时间，但你可以继续执行下一个任务，因为该任务不依赖此功能。
 
-### <a name="task-2---onboard-a-device-to-endpoint-dlp"></a>任务 2 - 将设备加入到终结点 DLP
+## 任务 2 - 将设备加入到终结点 DLP
 
 在本任务中，你将使用本地脚本选项加入 Windows 10 设备，使其得到终结点 DLP 策略的保护。
 
@@ -72,7 +72,7 @@ lab:
 
 你已经成功加入了一个设备，并将其加入到 Azure AD 中以受终结点 DLP 策略保护。
 
-### <a name="task-3---create-and-endpoint-dlp-policy"></a>任务 3 - 创建终结点 DLP 策略
+## 任务 3 - 创建终结点 DLP 策略
 
 在本任务中，你将在 Microsoft Purview 门户中创建数据丢失防护策略，以保护组织中驻留在 Windows 10 设备上的敏感数据。 如果用户想从包含信用卡信息的文档中复制内容，你创建的 DLP 策略将阻止该操作。
 
@@ -90,6 +90,8 @@ lab:
 
     - 名称：员工疾病终结点 DLP 策略
     - 说明：防止员工 ID 号和疾病被共享在终结点上。
+
+1. 在“分配管理单元(预览版)”页上，选择“下一步” 。
 
 1. 选择“**下一步**”。
 
@@ -112,15 +114,15 @@ lab:
 
 1. 将“这其中的任何项”下拉列表更改为“这其中的所有项”，使策略能够检测两个邻近的信息 。
 
-1. 向下滚动到“操作”，选择“+ 添加操作”下拉列表，然后选择“审核或限制 Windows 设备上的活动”  。
+1. 向下滚动到“操作”，选择“+ 添加操作”下拉列表，然后选择“审核或限制设备上的活动”  。
 
-1. 保留启用的所有复选框，并将右侧的下拉列表选项从“仅审核”更改为“阻止” 。
+1. 启用所有复选框。 将“复制到剪贴板”的下拉选项从“应用”更改为“阻止并覆盖”  。 将所有其他项的下拉选项从“仅审核”更改为“阻止” 。
 
 1. 在“用户通知”部分中，通过启用“使用通知来通知用户并帮助引导他们正确使用敏感信息”来启用通知 。 切换到“开”。
 
-1. 在“终结点设备”下，选中“当限制活动时向用户显示策略提示通知”复选框。 当你在 Windows 中为活动选择“阻止”时会打开此功能。 若要关闭 Windows 设备上的通知，请禁用限制。
+1. 在“终结点设备”下，选中“当限制活动时向用户显示策略提示通知。当你在 Windows 中为活动选择“阻止”时会打开此功能。若要关闭 Windows 设备上的通知，请禁用限制。”复选框 。
 
-1. 向下滚动到“用户替代”部分，在“允许从终结点设备替代”下选择“从剪贴板复制”  。
+1. 在“Microsoft 365 服务”下，选中“使用策略提示通知 Office 365 服务用户”复选框 。
 
 1. 选择“保存”，然后选择“下一步” 。
 
@@ -134,7 +136,7 @@ lab:
 
 你已成功激活该 DLP 策略。 如果策略检测到有人试图从包含信用卡信息的文件中复制内容，它将阻止该尝试并通知用户。
 
-### <a name="task-4---configure-endpoint-dlp-settings"></a>任务 4 - 配置终结点 DLP 设置
+## 任务 4 - 配置终结点 DLP 设置
 
 在本任务中，你将在 Windows 10 设备上配置一个文件夹的文件路径排除，以确保该文件夹的内容不会被自己创建的终结点 DLP 策略监视。
 
@@ -150,7 +152,7 @@ lab:
 
 1. 在“输入要排除的路径”字段中，键入 C:\FilePathExclusionTest，然后选择 +。
 
-1. 选择“添加”  。
+1. 选择“保存” 。
 
 1. 展开“敏感数据的浏览器和域限制”，并选择“+ 添加或编辑不允许的浏览器” 。
 
@@ -162,13 +164,13 @@ lab:
 
 1. 选择“+ 添加云服务域”以打开右侧窗格。
 
-1. 在右侧窗格中，在“域”下输入“dropbox.com”，选择“+”符号，然后选择“添加”   。
+1. 在右侧窗格中，在“域”下输入“dropbox.com”，选择“+”符号，然后选择“保存”   。
 
 1. 关闭浏览器窗口。
 
 你现在已为终结点 DLP 策略配置了自定义设置。 你创建的每个策略都将忽略你配置的文件夹中的内容，并且 Google Chrome 浏览器已添加为不允许的浏览器来处理敏感数据。
 
-### <a name="task-5---configure-microsoft-purview-extension"></a>任务 5 - 配置 Microsoft Purview 扩展
+## 任务 5 - 配置 Microsoft Purview 扩展
 
 作为合规性管理员，你需要评估向多个用户推出 Chrome 浏览器用于处理敏感数据的新业务要求。 对于此测试，你需要将 Google Chrome 浏览器安装到客户端 01，然后从 Google 网上应用店手动为 Google 添加 Purview 合规性扩展。
 
@@ -180,7 +182,9 @@ lab:
 
 1. 在“用户帐户控制”对话框中选择“是”以安装 Chrome 浏览器 。
 
-1. 安装完成后会打开“欢迎使用 Chrome”页面，通过 https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco 导航到 Chrome 网上应用店中的 Microsoft Purview 扩展。
+1. 安装完成后会打开“欢迎使用 Chrome”页面，请通过以下网址导航到 Chrome 网上应用店中的 Microsoft Purview 扩展：
+
+    https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco
 
 1. 验证你是否位于 Microsoft Purview 扩展的扩展页上，然后选择“添加至 Chrome” 。
 
