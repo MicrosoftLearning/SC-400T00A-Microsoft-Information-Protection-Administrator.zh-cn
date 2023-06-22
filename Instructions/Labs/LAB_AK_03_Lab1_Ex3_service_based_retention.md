@@ -4,11 +4,11 @@ lab:
   module: Module 3 - Implement Data Lifecycle and Records Management
 ---
 
-# <a name="lab-3---exercise-3---configure-service-based-retention"></a>实验室 3 - 练习 3 - 配置基于服务的保留
+# 实验室 3 - 练习 3 - 配置基于服务的保留
 
 你将扮演 Contoso Ltd 的合规管理员 Joni Sherman。法律部门要求你协助他们阻止心怀不满的员工删除公司数据。
 
-### <a name="task-1--configure-mailbox-holds"></a>任务 1 - 配置邮箱保留
+## 任务 1 - 配置邮箱保留
 
 在此任务中，你将激活邮箱保留，以防止删除员工邮箱中的任何内容。
 
@@ -37,7 +37,7 @@ lab:
 
 你已成功激活环境中邮箱的邮箱保留，并阻止了所有具有访问权限的人永久删除邮箱中的任何内容。 应用保留最多需要 4 小时。  可以立即继续执行下一个任务。
 
-### <a name="task-2--recover-sharepoint-documents"></a>任务 2 - 恢复 SharePoint 文档
+## 任务 2 - 恢复 SharePoint 文档
 
 在此任务中，你将删除文档并还原已删除的文档，以确保可以还原员工在得知针对其邮箱应用了诉讼保留后可能会删除的文档。
 
