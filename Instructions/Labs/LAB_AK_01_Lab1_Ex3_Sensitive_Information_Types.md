@@ -13,7 +13,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 在本练习中，你将使用安全与合规中心 PowerShell 模块创建新的自定义敏感信息类型，以识别关键字“员工”和“ID”旁边的员工 ID 的模式。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)。
 
 1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
 
@@ -23,7 +23,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 从顶部窗格中，选择“敏感信息类型”。  
 
-   >**提示：** 如果 Purview 门户中没有显示“敏感信息类型”，可能是因为之前实验室中 Joni 的权限更新为合规性管理员尚未在浏览器中更新。  你可能需要注销，并以 JoniS 的身份登录。
+   >**提示：** 如果 Purview 门户中没有显示“**敏感信息类型**”，则可能是因为之前实验室中将 Joni 的权限更新为合规性管理员尚未在浏览器中更新。  你可能需要注销，并以 JoniS 的身份登录。
 
 1. 在“敏感信息类型”选项卡上，选择“+ 创建敏感信息类型”打开新建敏感信息类型的向导 。
 
@@ -41,19 +41,19 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 1. 在新的右侧窗格“添加正则表达式”中，输入以下内容：
 
     - ID：Contoso ID
-    - 正则表达式：```\s[A-Z]{3}[0-9]{6}\s``` 
+    - 正则表达式：```[A-Z]{3}[0-9]{6}```
     - 字符串匹配
 
 1. 选择“完成”  。
 
-1. 再一次在右侧的“新建模式”窗格中，在“支持元素”下选择“+ 添加支持元素或元素组”下拉菜单，然后选择“关键字列表”   。
+1. 在“**新建模式**”窗格中“**支持元素**”下，选择“ **+ 添加支持元素或元素组**”下拉菜单，然后选择“**关键字列表**”。
 
 1. 在新的右侧窗格“添加关键字列表”中，输入以下内容：
 
     - ID：员工 ID 关键字
-    - 不区分大小写： 
+    - 不区分大小写：
         - *员工*
-        - *ID* 
+        - *ID*
     - 在“区分大小写”字段下，选择“字匹配”的径向
 
 1. 选择“完成”  。
@@ -76,7 +76,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 作为额外的搜索模式，你将使用员工数据的数据库架构创建基于完全数据匹配 (EDM) 的分类。 数据库源文件将使用员工的以下数据字段进行格式化：Name、Birthdate、StreetAddress 和 EmployeeID。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。 
+1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
 
 1. 要创建所需的 Azure AD 安全组，请选择右上角的用户图像，然后选择“注销”，以注销 Joni Sherman 帐户。
 
@@ -86,7 +86,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 显示“选择帐户”页面时，选择“使用其他帐户”并以“MOD 管理员”身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录  。  管理员的密码应由实验室托管提供程序提供。
 
-1. 在左侧窗格中，依次选择“团队和组”和“活动团队和组” 。
+1. 在左侧窗格中，展开“**团队和组**”，然后选择“**活动团队和组**”。
 
 1. 在可用的各种类型的组下，从“活动团队和组”消息下的菜单中选择“添加组”。
 
@@ -96,7 +96,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 在“设置基本信息”屏幕上，输入以下内容：
     - **名称**：EDM_DataUploaders
-    - **说明**：将为 EDM 上传数据的人员。
+    - **说明**：为 EDM 上传数据的人员。
 
 1. 选择“**下一步**”。
 
@@ -116,7 +116,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 验证“成员”下是否列出“Joni Sherman” 。
 
-1. 单击 X 关闭右侧窗格。
+1. 单击 **X** 以关闭右侧窗格。
 
 1. 选择带有 MOD 管理员缩写“MA”的圆圈，然后选择“注销” 。
 
@@ -130,14 +130,13 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
    >**注意：** 创建并提供基于完全数据匹配 (EDM) 的敏感信息类型 (SIT) 是一个多阶段过程。 可以将新体验与现有经典体验结合使用。 本实验室逐步介绍如何使用经典体验创建基于 EDM 的 SIT。 如需详细了解如何使用新体验创建基于 EDM 的 SIT，请参阅以下内容：[创建完全数据匹配敏感信息类型工作流新体验](https://learn.microsoft.com/en-us/microsoft-365/compliance/sit-create-edm-sit-unified-ux-workflow?view=o365-worldwide)
 
-
 1. 确保将“新 EDM 体验”的开关选择为“关闭”，以使用经典体验 。
 
       ![继续使用经典 EDM 体验的选项的屏幕截图。](../Media/ClassicEDMExperience.png)
 
 1. 选择“+ 创建 EDM 架构”
 
-1. 在“新建 EDM 架构”窗格中，输入以下内容：
+1. 在“**新建 EDM 架构**”页上输入以下内容：
     - **名称**：employeedb
     - **说明**：员工数据库架构
 
@@ -183,7 +182,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 依次选择“Contoso 员工 ID”和“完成” 。
 
-1. 在“新建模式”窗格中，选择“完成” 。
+1. 在“**新建模式**”页中选择“**完成**”。
 
 1. 在“为此 EDM 敏感信息类型定义模式”屏幕中选择“下一步”。
 
@@ -205,7 +204,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 为了将基于 EDM 的分类与包含敏感数据的数据库关联，接下来需要通过 EDM 上传代理工具对敏感信息类型的实际数据进行哈希处理并上传这些数据。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。
+1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
 
 1. 在“Microsoft Edge”中，导航到 https://go.microsoft.com/fwlink/?linkid=2088639 以访问 EDM 下载代理 。
 
@@ -229,19 +228,19 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 在记事本窗口的第一行中输入以下文本：
 
-    ```
+    ``` text
     Name,Birthdate,StreetAddress,EmployeeID
     ```
 
 1. 按 Enter 按钮，并将以下文本添加到记事本窗口中的第二行：
 
-    ```
+    ``` text
     Joni Sherman,01.06.1980,1 Main Street,CSO123456
     ```
 
 1. 按 Enter 按钮，并将以下文本添加到记事本窗口中的第三行：
 
-    ```
+    ``` text
     Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
     ```
 
@@ -261,13 +260,13 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 导航到 EDM 上传代理目录：
 
-    ```
+    ``` text
     cd "C:\Program Files\Microsoft\EdmUploadAgent"
     ```
 
 1. 通过运行以下 cmdlet，使用你的帐户授权，将数据库上传到租户：
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /Authorize
     ```
 
@@ -275,7 +274,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 通过在 PowerShell 中运行以下脚本，下载基于 EDM 的分类敏感信息类型的数据库架构定义：
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
     ```
 
@@ -283,32 +282,33 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 通过在 PowerShell 中运行以下脚本，对数据库文件进行哈希处理并将其上传到基于 EDM 的分类敏感信息类型：
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
     ```
 
 1. 使用以下命令检查上传进度：
 
-    ```
+    ``` text
     .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
     ```
+
 1. 状态显示为“已完成”后，即可使用 EDM 数据。
 
     ![EDM 上传代理完成的图像。](../Media/EDMUploadAgentCompleted.png)
 
 1. 关闭 PowerShell 窗口。
 
-你已成功对基于 EDM 的分类敏感信息类型的数据库文件进行了哈希处理，并上传了该文件。
+你已成功对基于 EDM 的分类敏感信息类型数据库文件进行了哈希处理，并上传了该文件。
 
 ## 任务 4 - 创建关键字字典
 
 在同事报告病假后，用户发送电子邮件时发生了几次个人信息泄露违规。  发生这种情况时，疾病原因就会被散布出去。我们不希望发生这种情况。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。
+1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
-1. 从左侧窗格中选择“数据分类”，并从顶部窗格中选择“敏感信息类型”选项卡 。
+1. 展开左侧窗格中的“**数据分类**”，然后选择“**分类器**”。 从顶部窗格选择“**敏感信息类型**”。
 
 1. 选择“+ 创建敏感信息类型”打开新建敏感信息类型向导。
 
@@ -321,9 +321,9 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 在“为此敏感信息类型定义模式”页面上，选择“+ 创建模式” 。
 
-1. 选择“主要元素”下面的下拉字段，然后选择“关键字字典” 。
+1. 在“**新建模式**”页上选择“**主要元素**”下面的下拉字段，然后选择“**关键字字典**”。
 
-1. 在“添加关键字字典”页面上，输入以下内容：
+1. 在“**添加关键字字典**”页面上输入以下内容：
 
    - **名称**：疾病字典
    - **关键字**：
@@ -361,16 +361,16 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 ## 任务 5 - 使用自定义敏感信息类型
 
-在策略中使用自定义敏感信息类型之前，应始终对其进行测试，否则自定义搜索模式故障可能会导致数据丢失或泄漏。 
+在策略中使用自定义敏感信息类型之前，应始终对其进行测试，否则自定义搜索模式故障可能会导致数据丢失或泄漏。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。 
+1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
 
 1. 选择左下角的 Windows 符号以打开开始菜单，输入“记事本”，然后从开始菜单中选择“记事本” 。
 
 1. 在记事本窗口中输入以下文本：
 
-    ```
-    Employee Joni Sherman EMP123456 is on absence because of the flu/influenza.
+    ``` text
+    Employee Joni Sherman EMP123456 is absent because of the flu/influenza.
     ```
 
 1. 依次选择“文件”和“另存为” 。
@@ -383,7 +383,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
-1. 在左侧导航窗格中，选择“数据分类”，然后选择“敏感信息类型”选项卡 。
+1. 在左侧导航窗格中，展开“**数据分类**”，然后选择“**分类器**”。 选择“**敏感信息类型**”选项卡。
 
 1. 在右上角的“搜索”框中输入“Contoso”，然后按 Enter 键。
 
