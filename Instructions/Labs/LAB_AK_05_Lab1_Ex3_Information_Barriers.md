@@ -12,9 +12,11 @@ lab:
 
 在此任务中，你将验证 Microsoft Teams 中是否启用了“按名称搜索”功能。 此功能允许用户轻松搜索和查找其组织中的特定个人。 你将按照提供的步骤配置并激活此功能，以增强组织的 Microsoft Teams 环境中的协作并简化通信。
 
+1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+
 1. 如果你仍使用 Joni 的帐户登录，请退出此帐户并关闭所有浏览器窗口。
 
-1. 在 Microsoft Edge 中，导航到 https://admin.teams.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 https://admin.teams.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
 1. 在左侧导航窗格中的“Teams”下拉菜单下，选择“Teams 设置” 
 

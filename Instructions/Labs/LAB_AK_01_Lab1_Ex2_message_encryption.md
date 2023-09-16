@@ -12,7 +12,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 在此任务中，你将安装 Exchange Online PowerShell 模块并在 Joni Sherman 的上下文中验证租户的正确 Azure RMS 功能，Joni Sherman 在上一练习中被指定为合规性管理员。
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
 1. 打开提升的 PowerShell 窗口，方法是右键选择 Windows 按钮，然后选择“Windows PowerShell (管理员)”。
 
@@ -24,9 +24,9 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
     Install-Module ExchangeOnlineManagement
     ```
 
-1. 输入表示“是”的 Y 并按 Enter 键，以确认“NuGet 提供程序安全”对话框 。 完成此进程可能需要几秒钟时间。
+1. 输入表示“是”的 Y 并按 Enter 键，以确认“NuGet 提供程序安全”对话框 。 此过程可能需要一段时间才能完成。
 
-1. 输入表示“是”的 Y 并按 Enter 键，以确认“不受信任的存储库安全”对话框 。  完成此进程可能需要几秒钟时间。
+1. 输入表示“是”的 Y 并按 Enter 键，以确认“不受信任的存储库安全”对话框 。  此过程可能需要一段时间才能完成。
 
 1. 输入以下 cmdlet 以更改执行策略，然后按 Enter 键
 
@@ -34,7 +34,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
     ```
 
-1. 单击表示“是”的 Y 并按 Enter 键，以确认“执行策略更改” 。 
+1. 单击表示“是”的 Y 并按 Enter 键，以确认“执行策略更改” 。
 
 1. 关闭 PowerShell 窗口。
 
@@ -46,7 +46,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
     Connect-ExchangeOnline
     ```
 
-1. 显示“登录”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。  Joni 的密码应由实验室托管提供程序提供。
+1. 显示“登录”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。 你将使用上一个实验室中 Joni 密码重置后的密码。
 
 1. 使用以下 cmdlet 并按 Enter 键，以验证是否在租户中激活了 Azure RMS 和 IRM：
 
@@ -128,7 +128,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 1. 在“收件人”行中，输入不在租户域中的个人或其他第三方电子邮件地址。 在主题行中输入“机密邮件”，并在正文中输入“我的超级机密邮件。”  。
 
-1. 在顶部窗格中，选择“选项”，然后选择“加密”以加密邮件 。 在成功加密消息后，应会看到一条显示“加密: 此消息已加密。 收件人无法删除加密”的通知。
+1. 在顶部窗格中，选择“选项”，然后选择“加密”以加密邮件 。 在成功加密消息后，应会看到一条显示“加密: 此消息已加密。 收件人无法移除加密”。
 
       ![“加密”设置的屏幕截图](../Media/OptionsEncrypt.png)
 
@@ -158,7 +158,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 组织财务部门发送的受保护邮件需要特殊的品牌信息，包括自定义的简介和正文文本，以及页脚中的“免责声明”链接。 财务邮件也应在 7 天后过期。 在此任务中，你将创建新的自定义 OME 配置以及传输规则，以将 OME 配置应用于财务部门发送的所有邮件。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且仍然应该有一个处于打开状态且已连接 Exchange Online 的 PowerShell 窗口。
+1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，此时仍应有一个处于打开状态且已连接 Exchange Online 的 PowerShell 窗口。
 
 1. 运行以下 cmdlet 以创建新的 OME 配置：
 
@@ -199,11 +199,11 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
     ```
 
 1. 键入以下 cmdlet 以验证更改。
-    
+
     ```powershell
     Get-OMEConfiguration -Identity "Finance Department" | Format-List
     ```
-    
+
 1. 使 PowerShell 保持打开状态。
 
 你已经成功创建了新的传输规则，当财务部门的成员向外部收件人发送邮件时，该规则将自动应用自定义 OME 模板。
@@ -212,9 +212,9 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 要验证新的自定义 OME 配置，需要再次使用财务团队成员 Lynne Robbins 的帐户。
 
-1. 使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)。 
+1. 使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)。
 
-1. 从任务栏中选择 Microsoft Edge。 Outlook 网页版选项卡应仍处于打开状态，你应该已作为 Lynne Robbins 登录了。 
+1. 从任务栏中选择 Microsoft Edge。 Outlook 网页版选项卡应仍处于打开状态，你应该已作为 Lynne Robbins 登录了。
 
 1. 从 Outlook 网页版的左上角选择“新建邮件”。
 
