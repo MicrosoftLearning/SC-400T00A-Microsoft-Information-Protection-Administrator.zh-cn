@@ -12,7 +12,7 @@ lab:
 
 在此任务中，你将创建文件计划标签，人力资源部门可以利用该标签来标记包含雇员受雇时所需提供的健康保险信息的内容。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。 
+1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并应以 Joni Sherman 的身份登录到 Microsoft 365 。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com/。
 
@@ -89,7 +89,7 @@ lab:
 
 在此任务中，你将把已发布的记录标签分配给 Outlook 中的电子邮件，然后查看应用记录的结果。 可能需要等待 24 小时的发布延迟。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 使用 lon -cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
 1. 在 Microsoft Edge 中，导航到 https://outlook.office.com。 如有必要，请以 Megan Bowen 的身份登录。
 
