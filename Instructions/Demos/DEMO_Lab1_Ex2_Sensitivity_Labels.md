@@ -1,90 +1,18 @@
 ---
 lab:
-  title: 练习 5 - 管理敏感度标签
-  module: Module 1 - Implement Information Protection
+  title: 会话 1 - Microsoft Purview 信息保护
+  module: Learning Objective - Implement Data Loss Prevention in Microsoft Purview
 ---
 
-# 实验室 1 - 练习 5 - 管理敏感度标签
+# 演示实验室 2：管理敏感度标签
 
-在本实验室中，你将扮演 Contoso Ltd. 的系统管理员 Joni Sherman。你的组织位于德国的雷德尼茨亨巴赫，目前打算实现一个敏感度计划，以确保人力资源部门的所有员工文档都已使用敏感度标签标记为组织信息保护策略的一部分。
-
-## 任务 1 启用对敏感度标签的支持
-
-在本任务中，你将安装 MSOnline 模块和 SharePoint Online PowerShell 模块，并在租户上启用对敏感度标签的支持。
-
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
-
-1. 右键选择开始菜单，然后选择 Windows PowerShell 并以管理员身份运行，以打开权限提升的 PowerShell 窗口。
-
-1. 输入表示“是”的 Y 并按 Enter，以确认“用户帐户控制”窗口 。
-
-1. 输入以下 cmdlet，以安装最新版 MS Online PowerShell 模块：
-
-   ```powershell
-   Install-Module -Name MSOnline
-   ```
-
-1. 输入表示“是”的 Y 并按 Enter 键以确认“NuGet 安全性”对话框以及“不受信任的存储库安全”对话框。  这可能需要一段时间才能处理完成。
-
-1. 输入以下 cmdlet，以安装最新版 SharePoint Online PowerShell 模块：
-
-    ```powershell
-    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-1. 输入表示“是”的 Y 并按 Enter 键，以确认“不受信任的存储库安全”对话框。
-
-1. 输入以下 cmdlet，以连接到 MS Online 服务：
-
-    ```powershell
-    Connect-MsolService
-    ```
-
-1. 在“登录到帐户”窗体中，以 Joni Sherman 的身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。   Joni 的密码应由实验室托管提供程序提供。
-
-1. 登录后，选择 PowerShell 窗口。
-
-1. 输入以下 cmdlet，以获取域：
-
-    ```powershell
-    $domain = get-msoldomain
-    ```
-
-1. 输入以下 cmdlet，以创建 SharePoint 管理员 URL：
-
-    ```powershell
-    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
-    ```
-
-1. 输入以下 cmdlet，以登录到 SharePoint Online 管理中心：
-
-    ```powershell
-    Connect-SPOService -url $adminurl
-    ```
-
-1. 在“登录到帐户”窗体中，以 MOD 管理员身份登录。  admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  管理员的密码应由实验室托管提供程序提供。
-
-1. 登录后，选择 PowerShell 窗口。
-
-1. 输入以下 cmdlet，以启用对敏感度标签的支持：
-
-    ```powershell
-    Set-SPOTenant -EnableAIPIntegration $true
-    ```
-
-1. 输入表示“是”的 Y 并按 Enter 键，以确认更改。
-
-1. 关闭 PowerShell 窗口。
-
-你通过 Teams 和 SharePoint 网站成功启用了对敏感度标签的支持。
-
-## 任务 2 - 创建敏感度标签
+## 任务 1 - 创建敏感度标签
 
 在本任务中，人力资源部门申请了敏感度标签，以应用于人力资源员工文档。 你将为内部文档创建敏感度标签，为人力资源部门创建子标签。
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 Joni Sherman 的身份 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。  Joni 的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，以“MOD 管理员”身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。  管理员的密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格上，展开“信息保护”，然后选择“标签” 。
 
@@ -171,11 +99,11 @@ lab:
 
 你已成功为组织的内部策略创建了敏感度标签，为人力资源 (HR) 部创建了敏感度子标签。
 
-## 任务 3 - 发布敏感度标签
+## 任务 2 - 发布敏感度标签
 
 现在，你将发布内部敏感度标签和人力资源部敏感度标签，以便人力资源部的用户可以在其人力资源文档中使用发布的敏感度标签。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。   以 JoniS@WWLxZZZZZZ.onmicrosoft.com 身份登录（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  Joni 的密码应由实验室托管提供程序提供。
+1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“MOD 管理员”身份登录到 Microsoft 365 。以 admin@WWLxZZZZZZ.onmicrosoft.com 身份（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录。  管理员的密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
@@ -222,11 +150,11 @@ lab:
 
 你成功发布了内部和人力资源敏感度标签。 请注意，最多可能需要 24 小时才能将更改复制到所有用户和服务。
 
-## 任务 4 - 使用敏感度标签
+## 任务 3 - 使用敏感度标签
 
 在本任务中，你将在 Word 和 Outlook 电子邮件中创建敏感度标签。 创建的文档将存储在 OneDrive 中，并通过电子邮件发送给人力资源员工。
 
-1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“Joni Sherman”身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365 。  Joni 的密码应由实验室托管提供程序提供。
+1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“MOD 管理员”身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365 。  管理员的密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 选择地址栏并导航到 https://portal.office.com。
 
@@ -282,13 +210,13 @@ lab:
 
 你成功创建了具有敏感度标签的人力资源 Word 文档，该文档已保存到 OneDrive。 然后，你通过也设置了敏感度标签的电子邮件将该文档发送给了人力资源工作人员。
 
-## 任务 5 - 配置自动标记
+## 任务 4 - 配置自动标记
 
 在本任务中，你将创建敏感度标签，该标签发现文档和电子邮件中包含与欧洲一般数据保护条例 (GPDR) 相关的信息时将自动对其进行标记。
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以“MOD 管理员”身份登录到 Microsoft Purview 门户  。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格上，展开“信息保护”，然后选择“标签” 。
 
