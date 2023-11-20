@@ -13,11 +13,11 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 在本练习中，你将使用安全与合规中心 PowerShell 模块创建新的自定义敏感信息类型，以识别关键字“员工”和“ID”旁边的员工 ID 的模式。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
 1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
 
-1. 展开左侧窗格中的“数据分类”，然后选择“分类器” 
+1. 展开左侧窗格中的“数据分类”，然后选择“分类器”
 
 1. 如果显示“什么是数据分类?”消息，选择“关闭” 。
 
@@ -76,7 +76,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 作为额外的搜索模式，你将使用员工数据的数据库架构创建基于完全数据匹配 (EDM) 的分类。 数据库源文件将使用员工的以下数据字段进行格式化：Name、Birthdate、StreetAddress 和 EmployeeID。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 要创建所需的 Azure AD 安全组，请选择右上角的用户图像，然后选择“注销”，以注销 Joni Sherman 帐户。
 
@@ -96,7 +96,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
     - **名称**：EDM_DataUploaders
     - **说明**：为 EDM 上传数据的人员。
 
-1. 选择“**下一步**”。
+1. 选择**下一步**。
 
 1. 在“编辑设置”页面上，将“角色分配”保留为默认设置，然后选择“下一步”  。
 
@@ -202,7 +202,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 为了将基于 EDM 的分类与包含敏感数据的数据库关联，接下来需要通过 EDM 上传代理工具对敏感信息类型的实际数据进行哈希处理并上传这些数据。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 在“Microsoft Edge”中，导航到 https://go.microsoft.com/fwlink/?linkid=2088639 以访问 EDM 下载代理 。
 
@@ -302,7 +302,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 在同事报告病假后，用户发送电子邮件时发生了几次个人信息泄露违规。  发生这种情况时，疾病原因就会被散布出去。我们不希望发生这种情况。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
@@ -361,7 +361,7 @@ Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证�
 
 在策略中使用自定义敏感信息类型之前，应始终对其进行测试，否则自定义搜索模式故障可能会导致数据丢失或泄漏。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **Joni Sherman** 的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 选择左下角的 Windows 符号以打开开始菜单，输入“记事本”，然后从开始菜单中选择“记事本” 。
 
