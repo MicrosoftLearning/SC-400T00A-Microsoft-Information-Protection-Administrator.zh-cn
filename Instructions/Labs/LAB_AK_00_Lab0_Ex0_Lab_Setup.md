@@ -20,9 +20,9 @@ lab:
 
 在此任务中，你将为实验室所需的用户帐户设置密码。
 
-1. 使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
+1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
 
-1. 在 Microsoft Edge 中，导航到 https://admin.microsoft.com ，以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
+1. 在 Microsoft Edge 中，导航到 https://admin.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
 1. 在左侧导航窗格中，展开“**用户**”，然后选择“**活动用户**”。
 
@@ -64,7 +64,7 @@ lab:
 
 1. 在左侧导航窗格中的“**Teams**”下拉菜单下，选择“**Teams 设置**”。
 
-1. 向下滚动到“按名称搜索”，将此功能切换为“打开”以启用此功能 
+1. 向下滚动到“按名称搜索”，将此功能切换为“打开”以启用此功能
 
 1. 选择“保存”以保存此设置。
 
@@ -72,7 +72,7 @@ lab:
 
 在此任务中，我们将在 SharePoint Online 和 OneDrive 中启用信息屏障，以促进安全协作并防止未经授权的通信。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
 1. 打开提升的 PowerShell 窗口，方法是右键选择 Windows 按钮，然后选择“Windows PowerShell (管理员)”。
 

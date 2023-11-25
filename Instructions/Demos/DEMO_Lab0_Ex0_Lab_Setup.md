@@ -82,7 +82,7 @@ lab:
     Connect-SPOService -url $adminurl
     ```
 
-1. 在“登录到帐户”窗体中，以 MOD 管理员身份登录。  admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  管理员的密码应由实验室托管提供程序提供。
+1. 在“登录到帐户”窗体中，以 MOD 管理员身份登录。 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  管理员的密码应由实验室托管提供程序提供。
 
 1. 登录后，选择 PowerShell 窗口。
 
