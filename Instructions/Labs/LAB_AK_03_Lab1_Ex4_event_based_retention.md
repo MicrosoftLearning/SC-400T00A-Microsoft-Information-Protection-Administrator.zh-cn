@@ -12,11 +12,11 @@ lab:
 
 在此步骤中，你将创建保留标签和事件类型。 事件类型将触发保留期。 为该特定事件类型应用了保留标签的任何内容都将对其强制执行标签的保留操作。
 
-1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“Joni Sherman”身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365 。  Joni 的密码应由实验室托管提供程序提供。
+1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“Joni Sherman”身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365********。  Joni 的密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
-1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”  。
+1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”************。
 
 1. 在“数据生命周期管理”页上选择“标签”选项卡，然后选择“+ 创建标签”按钮  。
 
@@ -39,9 +39,9 @@ lab:
     - 名称：项目关闭
     - 描述：当项目关闭时将触发此事件。
 
-1. 选择“**下一页**”。
+1. 选择**下一步**。
 
-1. 查看“摘要”页，然后选择“提交” 
+1. 查看“摘要”页，然后选择“提交”
 
 1. 在“已创建事件类型”页上选择“完成” 。
 
@@ -51,7 +51,7 @@ lab:
 
 1. 在“查看并完成”页上，选择“创建标签” 。  
 
-1. 在“已创建保留标签”页上选择“不执行任何操作”，然后选择“完成”  。
+1. 在“已创建保留标签”页上选择“不执行任何操作”，然后选择“完成”************。
 
 你已成功创建了标签，需要发布它。
 
@@ -59,11 +59,11 @@ lab:
 
 执行前一个任务之后，你现在需要发布项目资产保留标签，使用户可以将已发布的标签应用于 SharePoint 文档中的文档。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。 
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
-1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”  。
+1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”************。
 
 1. 在“数据生命周期管理”页面上，选择“标签”选项卡 。
 
@@ -79,7 +79,7 @@ lab:
 
 1. 确保仅将以下位置切换为“打开”：
 
-    - SharePoint 经典和通信站点
+    - SharePoint 经典和通信站点****
     - **OneDrive 帐户**
 
     应将“Exchange 邮箱”和“Microsoft 365 组邮箱和站点”切换为“关闭”  。
@@ -95,7 +95,7 @@ lab:
 
 1. 查看“完成”页，然后选择“提交” 。
 
-1. 在“已发布保留标签”页上选择“完成” 。
+1. 在“已发布保留标签”页上选择“完成”********。
 
 你已成功将项目资产的保留标签发布到用户。
 
@@ -103,13 +103,13 @@ lab:
 
 发布标签后，用户需要应用标签，并将项目的正确资产 ID 分配给要标记的文档。 在本任务中，你将测试此功能。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。 
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
 1. 在左上角选择九点图标，然后在“应用”下选择“SharePoint” 。
 
-1. 在顶部的搜索栏中搜索“品牌”，然后从搜索结果中选择“品牌”SharePoint 页。
+1. 在顶部的搜索栏中搜索“品牌”，然后从搜索结果中选择“品牌”SharePoint 页__****。
 
 1. 在顶部导航窗格中，选择“文档”。
 
@@ -127,26 +127,26 @@ lab:
 
 事件发生后，你需要触发它，使所标记的内容能够启动强制保留期。
 
-1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“Joni Sherman”身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365 。  Joni 的密码应由实验室托管提供程序提供。
+1. 你仍应使用“lon-cl1\admin”帐户登录到客户端 1 VM (LON-CL1)，并且应该以“Joni Sherman”身份 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管服务提供程序提供的唯一租户 ID）登录到 Microsoft 365********。  Joni 的密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格上选择“记录管理”，然后选择“事件”选项卡  。
 
-1. 选择“+ 新建”。 
+1. 选择“+ 新建”。
 
 1. 在“为事件命名”页面上，设置以下信息：
 
     - 名称：新产品发布已关闭
     - 描述：具有项目资产标签和 AssetID NewProductLaunch 的资产将进入其保留期。
 
-1. 选择“下一步”  。
+1. 选择**下一步**。
 
 1. 在“事件设置”页上，选择“使用事件类型”，然后选择“选择事件类型”  。
 
 1. 在“选择事件类型”页上，选择“项目关闭”，然后选择“添加”  。
 
-1. 选择“**下一页**”。
+1. 选择**下一步**。
 
 1. 在“事件设置”页上，将“SharePoint 和 OneDrive 中项的资产 ID”设置为“NewProductLaunch”  。
 
@@ -162,13 +162,13 @@ lab:
 
 若要验证所指定的保留期是否已启动，需要尝试删除文件。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。 
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
 
 1. 在左上角选择九点图标，然后在“应用”下选择“SharePoint” 。
 
-1. 在顶部的搜索栏中搜索“品牌”，然后从搜索结果中选择“品牌”SharePoint 页。
+1. 在顶部的搜索栏中搜索“品牌”，然后从搜索结果中选择“品牌”SharePoint 页__****。
 
 1. 在顶部导航窗格中，选择“文档”。
 

@@ -18,11 +18,11 @@ lab:
 
 1. 在 Microsoft Edge 中，导航到 https://admin.teams.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
-1. 在左侧导航窗格中的“Teams”下拉菜单下，选择“Teams 设置” 
+1. 在左侧导航窗格中的“Teams”下拉菜单下，选择“Teams 设置”
 
 1. 向下滚动到“按名称搜索”。 如果此功能设置为“关”，请将此功能切换为“开”，然后选择“保存”以保存此设置 。
 
-1. 在“更改生效需要时间”弹出窗口中，选择“确认” 
+1. 在“更改生效需要时间”弹出窗口中，选择“确认”
 
     >注意：此更改可能需要几个小时才会生效。
 
