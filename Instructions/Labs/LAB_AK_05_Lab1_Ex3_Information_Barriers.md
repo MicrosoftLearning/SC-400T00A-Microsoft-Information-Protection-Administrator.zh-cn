@@ -47,7 +47,7 @@ lab:
 1. 运行以下 PowerShell cmdlet：
 
     ````powershell
-    Connect-AzureAD -Tenant "<WWLxZZZZZZ>"
+    Connect-AzureAD -Tenant "WWLxZZZZZZ"
     $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
     $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
     if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
