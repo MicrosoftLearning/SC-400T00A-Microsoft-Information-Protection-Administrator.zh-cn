@@ -14,7 +14,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 虚拟机 (LON-CL1)****。
 
-1. 在“Microsoft Edge”中，导航到 https://admin.exchange.microsoft.com 并以 Joni Sherman 的身份登录到 Exchange 管理中心  。 以 JoniS@WWLxZZZZZZ.onmicrosoft.com 身份登录（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。
+1. 在“Microsoft Edge”中，导航到 `https://admin.exchange.microsoft.com` 并以 Joni Sherman 的身份登录到 Exchange 管理中心  。 以 JoniS@WWLxZZZZZZ.onmicrosoft.com 身份登录（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。
 
 1. 关闭所有提示窗口（如果出现）。
 
@@ -45,7 +45,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://www.office.com 并以 Joni Sherman 的身份登录到 Microsoft 365  。
+1. 在 Microsoft Edge 中，导航到 `https://www.office.com` 并以 Joni Sherman 的身份登录到 Microsoft 365  。
 
 1. 如果显示欢迎使用屏幕，请关闭它。 如果显示 Office 365 应用通知，同样请关闭它。
 

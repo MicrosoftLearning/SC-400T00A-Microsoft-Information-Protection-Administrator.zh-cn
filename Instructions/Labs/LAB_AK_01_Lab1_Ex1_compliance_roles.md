@@ -21,7 +21,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
 
-1. 打开 Microsoft Edge，选择地址栏，导航到 https://admin.microsoft.com 并以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft 365 管理中心************。 管理员的密码应由实验室托管提供程序提供。
+1. 打开 Microsoft Edge，选择地址栏，导航到 `https://admin.microsoft.com` 并以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft 365 管理中心************。 管理员的密码应由实验室托管提供程序提供。
 
 1. 在“保持登录?”对话框上，选中“不再显示此内容”复选框，然后选择“否”  。
 
@@ -51,7 +51,7 @@ lab:
 
 1. 单击右上角的“X”关闭显示 Joni Sherman 的帐户的浮出控件页面，返回到“活动用户”列表********。
 
-1. 切换到 Joni Sherman 之前，通过导航到 https://compliance.microsoft.com/auditlogsearch ，使用 MOD 管理员的全局管理员权限来激活审核日志记录。
+1. 切换到 Joni Sherman 之前，通过导航到 `https://compliance.microsoft.com/auditlogsearch` ，使用 MOD 管理员的全局管理员权限来激活审核日志记录。
 
 1. 在“审核”页上。 选择“开始记录用户和管理员活动”以激活审核日志记录。
 
@@ -67,13 +67,13 @@ lab:
 
 1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在“Microsoft Edge”中，导航到 https://compliance.microsoft.com。
+1. 在“Microsoft Edge”中，导航到 `https://compliance.microsoft.com`。
 
 1. 显示“选择帐户”窗口时，请选择“使用其他帐户” 。
 
 1. 显示“登录”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。  Joni 的密码应由实验室托管提供程序提供。
 
-1. 如果“改进合规性状况”消息窗口打开，请阅读文本消息，然后选择两次“下一步”，再选择“完成”  。 
+1. 如果“改进合规性状况”消息窗口打开，请阅读文本消息，然后选择两次“下一步”，再选择“完成”  。
 
 1. 此时将显示“欢迎使用 Microsoft Purview 合规性门户”页面。 调查仪表板磁贴和左侧的导航窗格。
 

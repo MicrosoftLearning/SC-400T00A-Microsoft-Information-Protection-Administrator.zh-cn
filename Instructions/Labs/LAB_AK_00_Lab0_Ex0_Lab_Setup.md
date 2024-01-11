@@ -48,7 +48,7 @@ lab:
 
 1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
 
-1. 在“Microsoft Edge”中，导航到 https://compliance.microsoft.com。
+1. 在“Microsoft Edge”中，导航到 `https://compliance.microsoft.com`。
 
 1. 在左侧导航窗格中选择“**审核**”。
 
@@ -60,7 +60,7 @@ lab:
 
 1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
 
-1. 在“Microsoft Edge”中，导航到 https://admin.teams.microsoft.com。
+1. 在“Microsoft Edge”中，导航到 `https://admin.teams.microsoft.com`。
 
 1. 在左侧导航窗格中的“**Teams**”下拉菜单下，选择“**Teams 设置**”。
 

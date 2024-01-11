@@ -21,7 +21,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 管理员的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` ，以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 管理员的密码应由实验室托管提供程序提供。
 
 1. 导航到“角色和范围”，然后从下拉菜单中选择“权限” 。
 
@@ -49,7 +49,7 @@ lab:
 
 在本练习中，你将在 Microsoft 通信合规性中配置自定义策略，以监视通信中的敏感财务信息。 按照以下步骤配置策略：
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
 1. 在左侧导航窗格中选择“通信合规性”。
 
@@ -98,7 +98,7 @@ lab:
 
 1. 退出登录 Joni 的帐户并关闭所有浏览器窗口。
 
-1. 在 Microsoft Edge 中，导航到 https://outlook.office.com 并以 LynneR@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录 Outlook 网页版。
+1. 在 Microsoft Edge 中，导航到 `https://outlook.office.com` 并以 LynneR@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录 Outlook 网页版。
 
 1. 从 Outlook 网页版的左上角选择“新建邮件”。
 
@@ -128,7 +128,7 @@ lab:
 
 在此任务中，你将在 Microsoft Purview 门户中管理通信合规性策略。你将查看“检测财务机密”策略的待处理项目并对其采取操作，以确保策略有效识别和处理任何潜在的合规性问题。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
 
 1. 从左侧导航栏导航到“通信合规性”。
 

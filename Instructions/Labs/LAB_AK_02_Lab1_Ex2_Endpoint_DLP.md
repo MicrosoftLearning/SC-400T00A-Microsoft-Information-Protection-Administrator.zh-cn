@@ -14,7 +14,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。 以 JoniS@WWLxZZZZZZ.onmicrosoft.com 身份登录（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 在 Microsoft Purview 门户的左侧导航窗格中，选择“设置”，然后选择“设备加入”  。
 
@@ -32,7 +32,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com，并应以 Joni Sherman 的身份登录到 Microsoft 365。************
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com`，并应以 Joni Sherman 的身份登录到 Microsoft 365。************
 
 1. 在 Microsoft Purview 门户的左侧导航窗格中，选择“设置”，然后选择“设备加入”  。
 
@@ -77,7 +77,7 @@ lab:
 
 1. 使用 lon -cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 从任务栏打开 Microsoft Edge，通过 https://compliance.microsoft.com 导航到 Microsoft Purview 门户，并在显示“登录”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com 的身份（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。
+1. 从任务栏打开 Microsoft Edge，通过 `https://compliance.microsoft.com` 导航到 Microsoft Purview 门户，并在显示“登录”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com 的身份（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。
 
 1. 在 Microsoft Purview 门户的左侧导航窗格中，展开“数据丢失防护”，然后选择“策略”。************
 
@@ -137,7 +137,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 在 Microsoft Purview 门户的左侧导航窗格中，展开“数据丢失防护”，然后选择“终结点 DLP 设置”。************
 
@@ -167,7 +167,7 @@ lab:
 
 1. 从任务栏中打开 Edge 浏览器。
 
-1. 通过 https://chrome.google.com 导航到 Google Chrome 下载。
+1. 通过 `https://chrome.google.com` 导航到 Google Chrome 下载。
 
 1. 选择“下载 Chrome”，并选择“下载”下方的“打开文件”，然后选择“ChromeSetup.exe”   。
 
@@ -175,13 +175,13 @@ lab:
 
 1. 安装完成后会打开“欢迎使用 Chrome”页面，请通过以下网址导航到 Chrome 网上应用店中的 Microsoft Purview 扩展：
 
-    https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco
+   ` https://chrome.google.com/webstore/detail/microsoft-purview-extensi/echcggldkblhodogklpincgchnpgcdco`
 
 1. 验证你是否位于 Microsoft Purview 扩展的扩展页上，然后选择“添加至 Chrome” 。
 
 1. 在添加“Microsoft Purview 扩展”窗口中，选择“添加扩展程序” 。
 
-1. 关闭通知窗口并导航到 **chrome://extensions**。
+1. 关闭通知窗口并导航到 `chrome://extensions`****。
 
 1. 验证“Microsoft Purview 扩展”是否可见并是否已激活。
 
