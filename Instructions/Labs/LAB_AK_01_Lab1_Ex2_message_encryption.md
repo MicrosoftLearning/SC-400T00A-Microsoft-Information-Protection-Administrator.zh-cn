@@ -4,9 +4,9 @@ lab:
   module: Module 1 - Implement Information Protection
 ---
 
-# 实验室 1 - 练习 2 - 管理 Office 365 邮件加密
+# 实验室 1 - 练习 2 - 管理 Microsoft Purview 邮件加密
 
-Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Microsoft 365 内置 Office 365 邮件加密 (OME)。 为此，她将修改默认模板并创建一个新的品牌模板，该模板将分配给其中一位试点用户。 然后，试点用户将使用其帐户测试 OME 功能。
+Joni Sherman 需要与其试点团队配置和测试的第一个设置是 Microsoft Purview 邮件加密。 为此，她将修改默认模板并创建一个新的品牌模板，该模板将分配给其中一位试点用户。 然后，试点用户将使用其帐户测试邮件加密功能。
 
 ## 任务 1 - 验证 Azure RMS 功能
 
@@ -70,13 +70,13 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已成功安装 Exchange Online PowerShell 模块，将其连接到租户，并验证了 Azure RMS 的正确功能。
 
-## 任务 2 - 修改默认 OME 模板
+## 任务 2 – 修改默认品牌模板
 
-组织中要求限制对外部标识提供者（例如 Google 或 Facebook）的信任。 由于默认情况下，这些用于访问受 OME 保护的邮件的社交 ID 处于激活状态，因此需要在组织中停用所有用户的社交 ID。
+组织中要求限制对外部标识提供者（例如 Google 或 Facebook）的信任。 默认情况下，这些用于访问受邮件加密保护的邮件的社交 ID 处于激活状态，因此需要在组织中停用所有用户的社交 ID。
 
 1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且仍然应该有一个处于打开状态且已连接 Exchange Online 的 PowerShell 窗口。
 
-1. 运行以下 cmdlet 以查看默认的 OME 配置：
+1. 运行以下 cmdlet 以查看默认配置：
 
     ```powershell
     Get-OMEConfiguration -Identity "OME Configuration" | fl
@@ -102,7 +102,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 你已成功停用 Office 365 邮件加密中的外部标识提供者（例如 Google 和 Facebook）。
 
-## 任务 3 - 测试默认 OME 模板
+## 任务 3 – 测试默认品牌模板
 
 必须确认在从租户的用户收到受 Office 365 消息加密保护的消息时不会为外部收件人显示任何社交 ID 对话框，并且他们需要在访问加密内容时使用 OTP。
 
@@ -160,7 +160,7 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，此时仍应有一个处于打开状态且已连接 Exchange Online 的 PowerShell 窗口。****
 
-1. 运行以下 cmdlet 以创建新的 OME 配置：
+1. 运行以下 cmdlet 以创建新的配置：
 
     ```powershell
     New-OMEConfiguration -Identity "Finance Department" -ExternalMailExpiryInDays 7
@@ -206,11 +206,11 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
 1. 使 PowerShell 保持打开状态。
 
-你已经成功创建了新的传输规则，当财务部门的成员向外部收件人发送邮件时，该规则将自动应用自定义 OME 模板。
+你已经成功创建了新的传输规则，当财务部门的成员向外部收件人发送邮件时，该规则将自动应用自定义品牌模板。
 
 ## 任务 5 - 测试自定义品牌模板
 
-要验证新的自定义 OME 配置，需要再次使用财务团队成员 Lynne Robbins 的帐户。
+要验证新的自定义配置，需要再次使用财务团队成员 Lynne Robbins 的帐户。
 
 1. 使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)****。
 
@@ -228,12 +228,12 @@ Joni Sherman 需要对其试点团队配置和测试的第一个设置是 Micros
 
     ![来自 Lynne Robbins 的加密电子邮件示例。 ](../Media/EncryptedEmail.png)
 
-1. 由于这两个选项均可用，因此自定义 OME 配置已激活社交 ID。 选择“使用一次性密码登录”以接收限时密码。
+1. 由于这两个选项均可用，因此自定义配置已激活社交 ID。 选择“使用一次性密码登录”以接收限时密码。
 
 1. 转到个人电子邮件门户并打开主题为“用于查看邮件的一次性密码”的邮件。
 
-1. 复制密码，将其粘贴到 OME 门户中，然后选择“继续”。
+1. 复制密码，将其粘贴到门户中，然后选择“继续”****。
 
 1. 查看包含自定义品牌信息的加密邮件。
 
-你已经成功测试了新的自定义 OME 模板。
+你已经成功测试了新的自定义模板。
