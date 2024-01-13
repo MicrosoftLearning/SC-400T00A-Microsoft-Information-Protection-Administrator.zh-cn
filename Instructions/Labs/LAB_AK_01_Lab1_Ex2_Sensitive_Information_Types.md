@@ -1,11 +1,13 @@
 ---
 lab:
-  title: 会话 1 - Microsoft Purview 信息保护
-  module: Learning Objective - Create and manage sensitive info types
+  title: 练习 2 - 管理敏感信息类型
+  module: Module 1 - Implement Information Protection
 ---
 
 
-# 演示实验室 1 - 管理敏感信息类型
+# 实验室 1 - 练习 2 - 管理敏感信息类型
+
+Contoso Ltd. 之前遇到过员工在使用票证解决方案处理支持票证时意外发送了客户个人信息的问题。 为了在将来指导用户使用，需要使用一种自定义敏感信息类型来识别电子邮件和文档中的员工 ID，这些 ID 由三个大写字符和六个数字组成。 为了降低假正率，将使用关键字“员工”和“ID”。 在本任务中，你将创建一种新的自定义敏感信息类型、用于基于 EDM 的分类的数据库以及关键字字典。
 
 ## 任务 1 - 创建自定义敏感信息类型
 
@@ -13,13 +15,15 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 管理员的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 Joni 的密码应由实验室托管提供程序提供。
 
 1. 展开左侧窗格中的“数据分类”，然后选择“分类器”
 
 1. 如果显示“什么是数据分类?”消息，选择“关闭” 。
 
 1. 从顶部窗格中，选择“敏感信息类型”。  
+
+   >**提示：** 如果 Purview 门户中没有显示“**敏感信息类型**”，则可能是因为之前实验室中将 Joni 的权限更新为合规性管理员尚未在浏览器中更新。  你可能需要注销，并以 JoniS 的身份登录。
 
 1. 在“敏感信息类型”选项卡上，选择“+ 创建敏感信息类型”打开新建敏感信息类型的向导 。
 
@@ -40,7 +44,7 @@ lab:
     - 正则表达式：```[A-Z]{3}[0-9]{6}```
     - 字符串匹配
 
-1. 选择“完成”  。
+1. 选择“完成”。
 
 1. 在“**新建模式**”窗格中“**支持元素**”下，选择“ **+ 添加支持元素或元素组**”下拉菜单，然后选择“**关键字列表**”。
 
@@ -50,9 +54,9 @@ lab:
     - 不区分大小写：
         - *员工*
         - *ID*
-    - 在“区分大小写”**** 字段下，选择“字匹配”** 的单选按钮
+    - 在“区分大小写”字段下，选择“字匹配”的径向
 
-1. 选择“完成”。
+1. 选择“完成”  。
 
 1. 在“新建模式”窗口中，将“字符相似度”值减少到 100 个字符。
 
@@ -72,9 +76,53 @@ lab:
 
 作为额外的搜索模式，你将使用员工数据的数据库架构创建基于完全数据匹配 (EDM) 的分类。 数据库源文件将使用员工的以下数据字段进行格式化：Name、Birthdate、StreetAddress 和 EmployeeID。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **MOD 管理员**的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 通过 https://compliance.microsoft.com 导航到 Microsoft Purview 门户。
+1. 要创建所需的 Azure AD 安全组，请选择右上角的用户图像，然后选择“注销”，以注销 Joni Sherman 帐户。
+
+1. 关闭浏览器窗口，并打开新的浏览器窗口。
+
+1. 在“Microsoft Edge”中，导航到 `https://admin.microsoft.com`。
+
+1. 显示“选择帐户”页面时，选择“使用其他帐户”并以“MOD 管理员”身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录  。  管理员的密码应由实验室托管提供程序提供。
+
+1. 在左侧窗格中，展开“**团队和组**”，然后选择“**活动团队和组**”。
+
+1. 在“活动团队和组”页上，在顶部导航栏中，选择“**安全组**”，然后选择“ **+ 添加安全组**”。
+
+    ![“添加组”按钮的屏幕截图。](../Media/add-security-group.png)
+
+1. 在“设置基本信息”屏幕上，输入以下内容：
+    - **名称**：EDM_DataUploaders
+    - **说明**：为 EDM 上传数据的人员。
+
+1. 选择**下一步**。
+
+1. 在“编辑设置”页面上，将“角色分配”保留为默认设置，然后选择“下一步”  。
+
+1. 在“查看并完成添加组”页面上，查看设置并选择“创建组” 。
+
+1. 当显示“已创建新组”页面时，选择“关闭” 。
+
+1. 确保已从顶部导航栏中选择了“**安全性**”选项卡，然后选择“**刷新**”。 从列表中选择新创建的 **EDM_DataUploaders** 组，以在右侧打开 **EDM_DataUploaders** 浮出控件页。
+
+1. 依次选择“成员”选项卡和“查看全部并管理成员” 。
+
+1. 在“管理组成员”屏幕中，选择“(+)添加成员” 。
+
+1. 依次选择“Joni Sherman”、“添加(1)”按钮以及后退箭头按钮 。
+
+1. 验证“成员”下是否列出“Joni Sherman” 。
+
+1. 单击 **X** 以关闭右侧窗格。
+
+1. 选择带有 MOD 管理员缩写“MA”的圆圈，然后选择“注销” 。
+
+1. 关闭浏览器窗口，然后打开一个新窗口。
+
+1. 通过 `https://compliance.microsoft.com` 导航到 Microsoft Purview 门户。
+
+1. 显示“选择帐户”页面时，请选择“Joni Sherman”并登录 。
 
 1. 展开“数据分类”，选择“分类器”，然后从顶部窗格中选择“EDM 分类器”选项卡  。
 
@@ -150,13 +198,113 @@ lab:
 
 你已成功创建基于 EDM 的新分类敏感信息类型，用于从数据库文件源中识别员工数据。
 
-## 任务 3 - 创建关键字字典
+## 任务 3 - 创建基于 EDM 的分类数据源
+
+为了将基于 EDM 的分类与包含敏感数据的数据库关联，接下来需要通过 EDM 上传代理工具对敏感信息类型的实际数据进行哈希处理并上传这些数据。
+
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
+
+1. 在“Microsoft Edge”中，导航到 `https://go.microsoft.com/fwlink/?linkid=2088639` 以访问 EDM 下载代理 。
+
+1. 选择“运行”以下载并安装该工具。
+
+1. 当安装向导在后台打开时，从任务栏中选择安装程序。
+
+1. 在“Microsoft 精确数据匹配上传代理设置”向导中，选择“下一步” 。
+
+1. 依次选择“我接受许可协议中的条款”和“下一步” 。
+
+1. 请勿更改默认的“目标文件夹”路径，并选择“下一步” 。
+
+1. 选择“安装”以执行安装。
+
+1. 当“用户帐户控制”窗口打开时，选择“是” 。
+
+1. 安装完成后，选择“完成”。
+
+1. 选择左下角的 Windows 符号以打开开始菜单，输入“记事本”，然后从开始菜单中选择“记事本” 。
+
+1. 在记事本窗口的第一行中输入以下文本：
+
+    ``` text
+    Name,Birthdate,StreetAddress,EmployeeID
+    ```
+
+1. 按 Enter 按钮，并将以下文本添加到记事本窗口中的第二行：
+
+    ``` text
+    Joni Sherman,01.06.1980,1 Main Street,CSO123456
+    ```
+
+1. 按 Enter 按钮，并将以下文本添加到记事本窗口中的第三行：
+
+    ``` text
+    Lynne Robbins,31.01.1985,2 Secondary Street,CSO654321
+    ```
+
+1. 依次选择“文件”和“另存为”，以保存文件 。
+
+1. 从左侧窗格中选择“文档”，并在“文件名”字段中输入以下内容 ：EmployeeData.csv
+
+1. 选择“保存类型:”下拉菜单，然后选择“所有文件( *.* )” 。
+
+1. 选择“编码:”下拉菜单，然后依次选择“UTF-8”和“保存”  。
+
+1. 关闭记事本窗口。
+
+1. 在栏中使用鼠标右键选择 Windows 符号，然后选择“Windows PowerShell (管理员)”并以管理员身份运行。
+
+1. 当“用户帐户控制”窗口打开时，选择“是” 。
+
+1. 导航到 EDM 上传代理目录：
+
+    ``` text
+    cd "C:\Program Files\Microsoft\EdmUploadAgent"
+    ```
+
+1. 通过运行以下 cmdlet，使用你的帐户授权，将数据库上传到租户：
+
+    ``` text
+    .\EdmUploadAgent.exe /Authorize
+    ```
+
+1. 显示“选择帐户”窗口时，以 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录。  Joni 的密码应由实验室托管提供程序提供。
+
+1. 通过在 PowerShell 中运行以下脚本，下载基于 EDM 的分类敏感信息类型的数据库架构定义：
+
+    ``` text
+    .\EdmUploadAgent.exe /SaveSchema /DataStoreName employeedb /OutputDir "C:\Users\Admin\Documents\"
+    ```
+
+    注意：如果最后一条命令失败，则可能需要更多时间才能应用“EDM_DataUploaders”组成员身份。 可能需要一个小时才能下载架构文件。  如果失败，请继续下一个任务，稍后返回此步骤。
+
+1. 通过在 PowerShell 中运行以下脚本，对数据库文件进行哈希处理并将其上传到基于 EDM 的分类敏感信息类型：
+
+    ``` text
+    .\EdmUploadAgent.exe /UploadData /DataStoreName employeedb /DataFile "C:\Users\Admin\Documents\EmployeeData.csv" /HashLocation "C:\Users\Admin\Documents\" /Schema "C:\Users\Admin\Documents\employeedb.xml"
+    ```
+
+1. 使用以下命令检查上传进度：
+
+    ``` text
+    .\EdmUploadAgent.exe /GetSession /DataStoreName employeedb
+    ```
+
+1. 状态显示为“已完成”后，即可使用 EDM 数据。
+
+    ![EDM 上传代理完成的图像。](../Media/EDMUploadAgentCompleted.png)
+
+1. 关闭 PowerShell 窗口。
+
+你已成功对基于 EDM 的分类敏感信息类型数据库文件进行了哈希处理，并上传了该文件。
+
+## 任务 4 - 创建关键字字典
 
 在同事报告病假后，用户发送电子邮件时发生了几次个人信息泄露违规。  发生这种情况时，疾病原因就会被散布出去。我们不希望发生这种情况。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **MOD 管理员**的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 展开左侧窗格中的“**数据分类**”，然后选择“**分类器**”。 从顶部窗格选择“**敏感信息类型**”。
 
@@ -213,7 +361,7 @@ lab:
 
 在策略中使用自定义敏感信息类型之前，应始终对其进行测试，否则自定义搜索模式故障可能会导致数据丢失或泄漏。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并应以 **MOD 管理员**的身份登录到 Microsoft 365。
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
 1. 选择左下角的 Windows 符号以打开开始菜单，输入“记事本”，然后从开始菜单中选择“记事本” 。
 
@@ -231,7 +379,7 @@ lab:
 
 1. 关闭记事本窗口。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 在左侧导航窗格中，展开“**数据分类**”，然后选择“**分类器**”。 选择“**敏感信息类型**”选项卡。
 

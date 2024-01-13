@@ -14,7 +14,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。 管理员的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。 管理员的密码应由实验室托管提供程序提供。
 
 1. 在左侧导航窗格中，展开“角色和范围”，然后选择“权限”。
 
@@ -42,7 +42,7 @@ lab:
 
 1. 使用 lon-cl2\admin 帐户登录到客户端 2 VM (LON-CL2)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 Megan Bowen 的身份 MeganB@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 Megan Bowen 的身份 MeganB@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。
 
 1. 在左侧导航窗格中，选择“数据丢失防护”下拉菜单，然后选择“活动管理器”********。
 

@@ -14,7 +14,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com/。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com/`。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格中，选择“记录管理” 。
 
@@ -58,7 +58,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com/。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com/`。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格中，选择“记录管理” 。
 
@@ -91,7 +91,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://outlook.office.com。 如有必要，请以 Megan Bowen 的身份登录。
+1. 在 Microsoft Edge 中，导航到 `https://outlook.office.com`。 如有必要，请以 Megan Bowen 的身份登录。
 
 1. 在 Outlook Web 中，选择“收件箱”
 

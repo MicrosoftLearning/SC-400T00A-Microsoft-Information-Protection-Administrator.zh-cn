@@ -16,7 +16,7 @@ lab:
 
 1. 如果你仍使用 Joni 的帐户登录，请退出此帐户并关闭所有浏览器窗口。
 
-1. 在 Microsoft Edge 中，导航到 https://admin.teams.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
+1. 在 Microsoft Edge 中，导航到 `https://admin.teams.microsoft.com` 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
 1. 在左侧导航窗格中的“Teams”下拉菜单下，选择“Teams 设置”
 

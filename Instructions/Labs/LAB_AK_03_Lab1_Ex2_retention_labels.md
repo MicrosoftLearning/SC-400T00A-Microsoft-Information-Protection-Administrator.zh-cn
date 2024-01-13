@@ -16,7 +16,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，并以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` ，并以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”************。
 
@@ -78,7 +78,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”************。
 
@@ -122,7 +122,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 https://compliance.microsoft.com。
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
 1. 在 Microsoft Purview 门户中的左侧导航窗格上，选择“策略”，然后在“数据”下选择“保留”   。
 
@@ -176,7 +176,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://outlook.office.com/ 并使用 Megan Bowen 的帐户登录  。
+1. 在 Microsoft Edge 中，导航到 `https://outlook.office.com/` 并使用 Megan Bowen 的帐户登录  。
 
 1. 在 Megan 的收件箱中，右键单击第一封电子邮件，然后选择“高级操作”>“分配策略”>“增值税申报表和支持性文档”。 如果新建的标签不可用，请为本练习选择“1 个月后删除”。
 
@@ -214,7 +214,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 https://www.office.com 并以 Joni Sherman 的身份登录到 Microsoft 365  。
+1. 在 Microsoft Edge 中，导航到 `https://www.office.com` 并以 Joni Sherman 的身份登录到 Microsoft 365  。
 
 1. 在 Microsoft 365 登陆页上，选择左上角的“应用启动器”图标（该图标带有九个点），然后从子菜单中选择“SharePoint”。
 1. 出现系统提示时，关闭“欢迎来到 SharePoint 起始页”窗口。
@@ -241,7 +241,7 @@ lab:
 
 1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. 在 Microsoft Edge 中，导航到 https://www.office.com 并以 Joni Sherman 的身份登录到 Microsoft 365  。
+1. 在 Microsoft Edge 中，导航到 `https://www.office.com` 并以 Joni Sherman 的身份登录到 Microsoft 365  。
 
 1. 在 Microsoft 365 登陆页上，选择左上角的“应用启动器”图标（该图标带有九个点），然后从子菜单中选择“OneDrive”。
 
