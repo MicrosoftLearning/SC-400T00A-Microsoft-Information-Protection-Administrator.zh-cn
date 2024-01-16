@@ -54,7 +54,7 @@ lab:
     Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
     ````
 
-    >注意：请务必更新 ZZZZZZ。 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID。
+    >**注意：** 请务必将 ZZZZZZ 更新为 ZZZZZZ.onmicrosoft.com。 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID。 租户 ID 需要完全限定的域名。
 
 1. 出现提示时，使用 MOD 管理员帐户登录
 
