@@ -14,7 +14,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 Joni Sherman 的身份 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。
+1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 Joni Sherman 的身份 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。
 
 1. 从左侧导航窗格中选择“电子数据展示”下拉菜单，然后选择“标准版” 。
 
@@ -40,7 +40,7 @@ lab:
 
 在任务 2 中，将创建电子数据展示（标准版）保留作为先前创建的“Wrongful Termination Case”的一部分。 此保留会保留与 Contoso Ltd. 非法解雇诉讼有关的所有相关电子数据。
 
-1. 仍应使用 Joni 的帐户登录。 如果没有，请打开 Microsoft Edge，导航到 `https://compliance.microsoft.com` ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 仍应使用 Joni 的帐户登录。 如果没有，请打开 Microsoft Edge，导航到 https://compliance.microsoft.com ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在左侧导航窗格中，导航到“电子数据展示”，然后选择“标准版” 。
 
@@ -74,7 +74,7 @@ lab:
 
 在任务 3 中，你将在之前创建的“Wrongful Termination Case”中进行电子数据展示（标准版）搜索。 此搜索旨在识别和收集与 Contoso Ltd. 非法解雇诉讼有关的所有相关电子数据。
 
-1. 仍应使用 Joni 的帐户登录。 如果没有，请打开 Microsoft Edge，导航到 `https://compliance.microsoft.com` ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 仍应使用 Joni 的帐户登录。 如果没有，请打开 Microsoft Edge，导航到 https://compliance.microsoft.com ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在左侧导航窗格中，导航到“电子数据展示”，然后选择“标准版” 。
 
@@ -86,7 +86,7 @@ lab:
 
 1. 在“位置”页上，为“Exchange 邮箱”、“SharePoint 站点”和“Exchange 公共文件夹”选择“打开”，然后选择“下一步”     。
 
-1. 在“定义搜索条件”**** 页上，选择“KQL 编辑器”**** 的单选按钮。
+1. 在“定义搜索条件”**** 页上，选择“KQL 编辑器”**** 单选按钮。
 
 1. 在 KQL 编辑器框中，输入：
 
@@ -106,7 +106,7 @@ lab:
 
 在此任务中，你将导出从“Wrongful Termination Search”中获取的搜索结果。
 
-1. 仍应使用 Joni 的帐户登录。 如果没有，请在 Microsoft Edge 中导航到 `https://compliance.microsoft.com` ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 仍应使用 Joni 的帐户登录。 如果没有，请在 Microsoft Edge 中导航到 https://compliance.microsoft.com ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在左侧导航窗格中，导航到“电子数据展示”，然后选择“标准版” 。
 
@@ -164,7 +164,7 @@ lab:
 
 在此任务中，你将查看从“Wrongful Termination Search”中获取的搜索结果，以确定与案例相关的任何潜在安全或合规性问题。
 
-1. 仍应使用 Joni 的帐户登录。 如果没有，请在 Microsoft Edge 中导航到 `https://compliance.microsoft.com` ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
+1. 仍应使用 Joni 的帐户登录。 如果没有，请在 Microsoft Edge 中导航到 https://compliance.microsoft.com ，以 Joni Sherman 的身份登录到 Microsoft Purview 门户  。
 
 1. 在左侧导航窗格中，导航到“电子数据展示”，然后选择“标准版” 。
 

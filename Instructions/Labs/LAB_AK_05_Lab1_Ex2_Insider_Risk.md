@@ -16,7 +16,7 @@ lab:
 
 1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
 
-1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` ，以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 管理员的密码应由实验室托管提供程序提供。
+1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com ，以 MOD 管理员身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。 管理员的密码应由实验室托管提供程序提供。
 
 1. 导航到“角色和范围”，然后从下拉菜单中选择“权限” 。
 
@@ -44,7 +44,7 @@ lab:
 
 在此任务中，你将在 Microsoft Purview 门户中自定义内部风险管理设置。 这将使 Joni Sherman 能够有效地管理组织内潜在的内部风险并确保敏感信息的安全。
 
-1. 在 Microsoft Edge 中，导航到 `https://compliance.microsoft.com` 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
+1. 在 Microsoft Edge 中，导航到 https://compliance.microsoft.com 并以 JoniS@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
 
 1. 从左侧导航栏中，选择“内部风险管理”。
 
@@ -152,7 +152,7 @@ lab:
 
 1. 选择**下一步**。
 
-1. 在**选择触发事件的阈值**页上，选择**应用内置阈值(建议)**，然后选择**下一步**。
+1. 在“选择触发事件的阈值”**** 页上，选择“应用内置阈值(建议)”****，然后选择“下一步”****。
 
 1. 在“指示器”页上，选择“物理访问指示器”下拉菜单，取消选中“对敏感资产的访问终止或失败后的物理访问”（如果已选中），然后选择“下一步”   。
 
