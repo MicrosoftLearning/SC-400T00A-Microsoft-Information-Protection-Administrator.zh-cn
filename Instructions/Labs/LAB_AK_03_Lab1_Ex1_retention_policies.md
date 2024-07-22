@@ -162,119 +162,119 @@ lab:
 
 你已通过 PowerShell 成功创建了保留策略，其保留期为 3 年。
 
-<!-- ## Task 4 – Create Retention Policy with adaptive scope
+## 任务 4 - 使用自适应范围创建保留策略
 
-In this exercise you will create a retention policy for the finance and legal department. The purpose of the policy is to comply with the law, retaining all legal related documents for 5 years. First you will create an adaptive scope including the legal and the retail department, then you will create a retention policy using this scope.
+在本练习中，你将为财务和法律部门创建保留策略。 该策略的目的是遵守法律，将所有法律相关文档保留 5 年。 首先，你将创建一个自适应范围，包括法律和零售部门，然后使用此范围创建保留策略。
 
-1. You should still be logged into Client 1 VM (LON-CL1) as the **lon-cl1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该会以 Joni Sherman 的身份登录到 Microsoft 365。
 
-1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If so, select it and proceed to the next step. If you closed it, then in a new tab, navigate to **`https://compliance.microsoft.com`**.
+1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果是这样，请选择该选项卡并继续进行下一步。 如果已关闭，请在新标签页中导航到 `https://compliance.microsoft.com`。
 
-1. In the **Microsoft Purview** portal on the left navigation pane expand **Roles & scopes** then select **Adaptive scopes**.
+1. 在 Microsoft Purview 门户中的左侧导航窗格上，展开“角色和范围”，然后选择“自适应范围”************。
 
-1. On the **Adaptive scopes** page select **+ Create scope**.
+1. 在“自适应范围”页上，选择“+ 创建范围”********。
 
-1. On the **Name your adaptive policy scope** page input:
+1. 在“命名自适应策略范围”页上，输入****：
 
-    - **Name**: Legal Documents Retention
-    - **Description**: Retention for legal related documents
+    - 名称：法律文档保留
+    - 说明：法律相关文档的保留
 
-1. Select **Next**.
+1. 选择**下一步**。
 
-1. On the **Assign admin unit** page select **Next**.
+1. 在“分配管理单元”页上，选择“下一步”********。
 
-1. On the **What type of scope do you want to create?** page select **Users** then select **Next**.
+1. 在“想要创建哪种类型的范围?”页上，选择“用户”，然后选择“下一步”************。
 
-1. On the **Create the query to define users** page, under **User attributes** select the drop-down menu for **Attribute** then select **Department**.
+1. 在“创建查询以定义用户”页上，在“用户属性”下选择“属性”下拉菜单，然后选择“部门”****************。
 
-1. Directly next to the attribute field select **is equal to** as the operator.
+1. 直接在属性字段旁边选择“等于”作为运算符****。
 
-1. Input **Legal** in the **Value** field.
+1. 在“值”字段中输入“法律”********。
 
-1. To add a second attribute, select **+ Add attribute** on the **Create the query to define users** page.
+1. 若要添加第二个属性，请在“创建查询以定义用户”页面上选择“+ 添加属性” 。
 
-1. For the **Query operator**, **Attribute**, **Operator**, and **Value** input:
+1. 对于“查询运算符”、“属性”、“运算符”和“值”，输入****************：
 
-   - **Query operator**: Or
-   - **Attribute**: Department
-   - **Operator**: is equal to
-   - **Value**: Retail
+   - 查询运算符：或
+   - 属性：部门
+   - 运算符：等于
+   - 值：零售
 
-1. Ensure the checkboxes are selected next to each attribute then select **Next**.
+1. 确保选中每个属性旁边的复选框，然后选择“下一步”****。
 
-1. On the **Review and finish** page select **Submit**.
+1. 在“查看并完成”页上，选择“提交”********。
 
-1. On the **Your scope was created page** select **Done**.
+1. 在“已创建范围”页上，选择“完成”********。
 
-1. In the **Microsoft Purview** portal, in the left navigation pane, expand **Data lifecycle management** then select **Microsoft 365**.
+1. 在“Microsoft Purview”门户的左侧导航窗格中，展开“数据生命周期管理”，然后选择“Microsoft 365”************。
 
-1. On the **Data lifecycle management** page select the **Retention policies** tab then select **+ New retention policy**.
+1. 在“数据生命周期管理”页上，选择“保留策略”选项卡，然后选择“+ 新建保留策略”************。
 
-1. On the **Name your retention policy** page input:
+1. 在“命名保留策略”页上输入****：
 
-    - **Name**: Legal Data Retention
-    - **Description**: Retention of all documents within the legal and retail departments.
+    - 名称：法律数据保留
+    - 说明：保留法律和零售部门内的所有文档。
 
-1. Select **Next**.
+1. 选择**下一步**。
 
-1. On the **Policy Scope** page select **Next**.
+1. 在“策略范围”页上选择“下一步”********。
 
-1. On the **Choose the type of retention policy to create** page select **Adaptive** then select **Next**.
+1. 在“选择要创建的保留策略的类型”页上，选择“自适应”，然后选择“下一步”************。
 
-1. On the **Choose adaptive policy scopes and locations** page select **+ Add scopes**.
+1. 在“选择自适应策略范围和位置”页上，选择“+ 添加范围”********。
 
-1. In the right flyout **Choose adaptive policy scopes** page select the checkbox for **Legal Documents Retention** then select the **Add** button.
+1. 在右侧浮出控件“选择自适应策略范围”页上，选中“法律文档保留”复选框，然后选择“添加”按钮************。
 
-1. Back on the **Choose locations to apply the policy** enable:
+1. 回到“选择应用策略的位置”，启用****：
 
-    - **Exchange mailboxes**
-    - **OneDrive accounts**
-    - Leave all other locations disabled.
+    - Exchange 邮箱****
+    - **OneDrive 帐户**
+    - 将所有其他位置保留为禁用状态。
 
-1. Select **Next**.
+1. 选择**下一步**。
 
-1. On the **Decide if you want to retain content, delete it, or both** page, for the **Retain items for a specific period** section input:
+1. 在“决定是否要保留和/或删除内容”页上，为“将项保留特定时间段”部分输入********：
 
-    - **Retain items for a specific period**: 5 years
-    - **Start the retention period based on**: When items were created
-    - **At the end of the retention period**: Do nothing
+    - 将项保留特定期限：5 年
+    - 保留期开始依据：项创建时间
+    - 保留期结束时：无操作
 
-1. Select **Next**.
+1. 选择**下一步**。
 
-1. On the **Review and finish** page select **Submit**.
+1. 在“查看并完成”页上，选择“提交”********。
 
-1. Once your policy is created, select the **Done** button.
+1. 创建策略后，选择“完成”按钮。
 
-1. On the **You successfully created a retention policy** page select **Done**.
+1. 在“已成功创建保留策略”页上，选择“完成”********。
 
-You have successfully applied an adaptive scope to a retention policy.
+你已成功将自适应范围应用于保留策略。
 
-## Task 5 – Test adaptive scope policy
+## 任务 5 - 测试自适应范围策略
 
-In this exercise you will verify the users affected by the adaptive scope and test the new adaptive retention policy.
+在本练习中，你将验证受自适应范围影响的用户，并测试新的自适应保留策略。
 
->**Note**: When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied.
+>注意：创建并提交保留策略后，最多可能需要 7 天才能应用保留策略****。
 
-1. To review the details of the adaptive scope retention policy, logged into  **lon-cl1\admin**, open a PowerShell window by selecting the Windows button with the right mouse button and then select Windows PowerShell.
+1. 若要查看自适应范围保留策略的详细信息，请登录 lon-cl1\admin，打开 PowerShell 窗口，方法是右键选择 Windows 按钮，然后选择“Windows PowerShell”****。
 
-1. Connect to the Security & Compliance Center in your tenant with the following cmdlet:
+1. 使用以下 cmdlet 连接到租户中的“安全与合规中心”：
 
     ```powershell
     Connect-IPPSSession
     ```
 
-1. If prompted with a sign in dialog box, sign in with Joni Sherman's account,  JoniS@WWLxZZZZZZ.onmicrosoft.com (where ZZZZZZ is your unique tenant ID provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+1. 如果出现登录对话框的提示，请使用 Joni Sherman 的帐户 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供商提供的唯一租户 ID）登录。 管理员的密码应由实验室托管提供程序提供。
 
-1. Run the following cmdlet to view all details of the adaptive scope policy:
+1. 运行以下 cmdlet 以查看自适应范围策略的所有详细信息：
 
     ```powershell
     Get-RetentionCompliancePolicy -Identity "Legal Data Retention"     -DistributionDetail | Format-List
     ```
 
-1. Review the details. Certain parameters should have following statuses:
+1. 查看详细信息。 某些参数应具有以下状态：
 
-    - **Enabled**: True
-    - **Mode**: Enforce
-    - **DistributionStatus**: Success
+    - Enabled: True
+    - Mode: Enforce
+    - DistributionStatus: Success
 
-You have verified the success of your adaptive scope.-->
+你已验证自适应范围是否成功。
