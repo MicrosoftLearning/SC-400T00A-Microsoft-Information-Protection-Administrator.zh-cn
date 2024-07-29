@@ -6,168 +6,123 @@ lab:
 
 # 实验室 1 - 练习 3 - 管理可训练的分类器
 
-Contoso Ltd. 租户包含一个名为“销售和营销”的 SharePoint 网站集，将在未来用于存储一些与财务相关的文档和报表。 由于这些文档的性质，你需要创建一个可训练的分类器来识别和标记这些文件。 为此，你将激活自定义可训练的分类器并新建一个可训练的分类器。
+Contoso Ltd. 需要确保存储在“销售和营销”SharePoint 网站中的财务文档和报表已正确分类。 若要实现此目的，需要创建可训练的分类器来识别和标记这些文件。
 
-**重要事项**：在租户中激活可训练的分类器后，需 7 到 14 天才能创建任意自定义可训练分类器。 完成整个激活过程后，“新建可训练的分类器”按钮才可用。  因此，你现在只能执行任务 1。 如果想要完成任务 2 和 3，则需要等待可训练分类器设置处理完毕。  这些实验室说明可通过 GitHub.com 获得。 用于执行任务 1 的 Microsoft 365 租户应仍处于活动状态。
+## 任务 1 – 创建可训练的分类器
 
-## 任务 1 - 激活可训练的分类器
+在此任务中，你将激活租户中可训练的分类器，以创建自定义分类器。
 
-创建自定义的可训练分类器之前，需在租户中激活该功能。 若要激活所需的全局管理员权限，需先注销 Joni Sherman 帐户，并使用 MOD 管理员激活该功能。
-
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。
-
-1. 选择右上角的图片，然后选择“注销”，以注销 Joni Sherman 帐户。
-
-1. 关闭浏览器窗口，并打开新的浏览器窗口。
+1. 仍应使用 LON-CL1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 帐户登录到 Microsoft 365。********
 
 1. 在“Microsoft Edge”中，导航到 `https://compliance.microsoft.com`。
 
-1. 显示“选择帐户”页面时，选择“使用其他帐户”并以“MOD 管理员”身份 admin@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录  。  管理员的密码应由实验室托管提供程序提供。
+1. 在左侧导航窗格中，展开“数据分类”，然后选择“分类器”。********
 
-1. 从左侧导航窗格导航到“**数据分类**”并将其展开，然后选择“**分类器**”。
+1. 在“分类器”页上，应已选择“可训练分类器”的选项卡。********
 
-1. 默认情况下，将从顶部窗格中选择“**可训练的分类器**”。
+2. 选择“+ 创建可训练的分类器”以新建分类器。
 
-1. 在“**开始使用可训练的分类器**”对话框中，选择“**开始扫描过程**”。
+1. 在“命名和描述可训练的分类器”**** 页中输入：
 
-1. 刷新浏览器窗口。
+    - **名称**：`Contoso Company Data`
+    - **说明**：`Trainable classifier for company data produced and stored by Contoso Ltd.`
 
-1. 阅读窗口顶部的信息横幅消息“为使你能够创建可训练的分类器，我们目前正在扫描你的内容位置以生成分析，该分析可帮助我们了解你的组织中有哪些内容类型。此过程需要 7 到 14 天才能完成”。
+1. 选择**下一步**。
 
-1. 使客户端保持打开状态。
+1. 在“正面示例内容来源”**** 上，选择“+选择网站”****。
 
-你在租户中成功激活了可训练的分类器。 现在需等待 7 到 14 天，直到“创建可训练的分类器”按钮可用。  如果你在教室，没有 7 到 14 天的时间来等待可训练分类器完成处理，你可以登录在可训练的分类器处理完成后提供的租户来执行本练习中的其他任务。  租户应仍处于活动状态。
+1. 在右侧的“添加 SharePoint 网站”弹出页面中，选择以下 SharePoint 网站：****
 
-## 任务 2 - 创建可训练的分类器（可选实验室任务）
+    - Mark8ProjectTeam
 
-成功激活可训练的分类器后，“创建可训练的分类器”按钮将变为可用，并且可以新建自定义分类器。 在本任务中，Joni 将新建可训练的分类器，并选择其他 SharePoint 网站来标识 Contoso Ltd 创建和存储的典型数据。
+1. 选择弹出页面底部的“添加”。****
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 MOD 管理员身份登录到 Microsoft 365 。
+1. 返回“正面示例内容来源”页，选择“下一步”。********
 
-1. 选择右上角的 MA，然后选择“注销”，以注销 MOD 管理员帐户。
+1. 在“负面示例内容来源”页上，选择以下 SharePoint 网站：****
 
-1. 关闭浏览器窗口，并打开新的浏览器窗口。
-
-1. 在“Microsoft Edge”中，导航到 `https://compliance.microsoft.com`。
-
-1. 显示“选择帐户”页面时，请选择“使用其他帐户”并以 Joni Sherman 身份登录  。 JoniS@WWLxZZZZZZ.onmicrosoft.com（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）。  Joni 的密码应由实验室托管提供程序提供。
-
-1. 从左侧导航窗格导航到“数据分类”。
-
-1. 从顶部窗格中选择“可训练的分类器”。
-
-1. 选择“+ 创建可训练的分类器”以新建分类器。
-
-1. 在“命名和描述可训练的分类器”页面中输入以下信息：
-
-    - **名称**：Contoso 公司数据
-    - **说明**：可训练的分类器，适用于 Contoso Ltd 生成和存储的公司数据。
-
-1. 选择“**下一步**”。
-
-1. 选择“选择网站”，打开右侧窗格。
-
-1. 选择以下 SharePoint 网站：
-
-    - 通信网站
-    - News @ Contoso
-    - Contoso Web 1
-    - **品牌**
-    - 数字倡议组织公共关系
-    - Work @ Contoso
-    - **销售和营销**
-    - Contoso Landings
-    - **Mark 8 项目团队**
     - HR
-    - **操作**
-    - **零售**
-    - PointPublishing Hub 网站
-    - **团队网站**
-    - 领导团队
-    - **社区**
-    - Give @ Contoso
-    - Benefits @ Contoso
-    - Learn @ Contoso
-    - 活动 - 事件
 
-1. 等待列表中显示所选网站，然后选择“下一步”。
+1. 选择弹出页面底部的“添加”。****
 
-1. 检查设置，然后选择“创建可训练的分类器”。
+1. 返回“负面示例内容来源”页，选择“下一步”。********
 
-1. 显示消息“已创建可训练的分类器”时，选择“完成” 。
+1. 在**查看和创建分类器以开始处理示例内容**上，选择**创建可训练的分类器**
 
-1. 现在，需等待 1 到 24 个小时才能继续操作。 使浏览器保持打开状态。
+1. 在“正在训练分类器”页上，选择“完成”。********
 
-现在，正在分析所选 SharePoint 网站中的文档和文件，最多可能需要 24 个小时。
+现在，正在分析所选 SharePoint 网站中的文档和文件，可能需要长达 24 个小时。
 
-## 任务 3 - 发布可训练的分类器（可选实验室任务）
-新建可训练的分类器并完成文档和文件的初始分析后，需执行手动训练过程。 在本任务中，Joni 将开始对分类器进行校准，以达到发布所需的准确度。
+<!---
+## Task 3 – Publish a trainable classifier (optional lab task)
 
-1. 你仍应使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 的身份登录到 Microsoft 365 。
+After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
 
-1. 浏览器窗口此时显示 Microsoft Purview 门户中“可训练的分类器”选项卡中的“数据分类” 。
+1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
 
-1. 选择名称为“Contoso 公司数据”、类型为“自定义”的可训练分类器，打开详细设置 。
+1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
 
-1. 查看右侧的“详细信息”选项卡，包括分类器的源网站、已处理的项数以及“需对项进行测试”的“状态”  。
+1. Select the trainable classifier with the name **Contoso Company Data** of the type **Custom** to open the detailed settings.
 
-1. 若要添加用于训练分类器的项，请选择“添加要测试的项”，以打开右侧的选择窗格。
+1. Review the **Details** tab on the right side, including the source site for the classifier, the number of processed items and the **Status**, which is in **Need test items**.
 
-1. 在“选择具有要测试的项的网站”窗格中，选择“+ 选择网站” 。
+1. To add items for training the classifier, select **Add items to test** to open the right side selection pane.
 
-1. 选择以下 SharePoint 网站：
+1. In the **Choose sites with items to test** pane, select **+ Choose sites**.
 
-    - 通信网站
-    - News @ Contoso
-    - Contoso Web 1
-    - **品牌**
-    - 数字倡议组织公共关系
-    - Work @ Contoso
-    - **销售和营销**
-    - Contoso Landings
-    - **Mark 8 项目团队**
-    - HR
-    - **操作**
-    - **零售**
-    - PointPublishing Hub 网站
-    - **团队网站**
-    - 领导团队
-    - **社区**
-    - Give @ Contoso
-    - Benefits @ Contoso
-    - Learn @ Contoso
-    - 活动 - 事件
+1. Select the following SharePoint sites:
 
-1. 选择 **添加** 。
+    - **Communication site**
+    - **News @ Contoso**
+    - **Contoso Web 1**
+    - **Brand**
+    - **Digital Initiative Public Relations**
+    - **Work @ Contoso**
+    - **Sales and Marketing**
+    - **Contoso Landings**
+    - **Mark 8 Project Team**
+    - **HR**
+    - **Operations**
+    - **Retail**
+    - **PointPublishing Hub Site**
+    - **Team Site**
+    - **Leadership Team**
+    - **Community**
+    - **Give @ Contoso**
+    - **Benefits @ Contoso**
+    - **Learn @ Contoso**
+    - **Campaigns - Events**
 
-1. 等待列表中显示网站，然后选择“添加”。
+1. Select **Add**.
 
-1. 更新“概述”部分后，窗口顶部将显示新选项卡。
+1. Wait until the sites are shown in the list and select **Add**.
 
-1. 从顶部窗格中选择“要查看的已测试项”。
+1. When the **Overview** section is updated, a new tab is shown in the top of the window.
 
-1. 可能需要 15 到 30 分钟才能查看第一批结果。 如果列表中未显示任何文件，请刷新浏览器窗口，直到有可用数据。
+1. Select **Tested items to review** from the top pane.
 
-1. 从列表中选择第一个文件的名称，打开预览窗口。
+1. It will take between 15 to 30 minutes until first results are ready for review. Refresh the browser window if no files are shown in the list, until data is available.
 
-1. “预测”行为“匹配”时，该文件会标识为分类器的匹配项 。 预览窗口下方会显示消息：“我们预测此项与该分类器‘匹配’” 。 选择“匹配”，以批准自动分类。
+1. Select the name of the first file from the list to open the preview window.
 
-1. “预测”行为“不匹配”时，该文件不会标识为分类器的匹配项 。 预览窗口下方会显示消息：“我们预测此项与该分类器‘不匹配’” 。 选择“不匹配”，以批准自动分类。
+1. When the **Prediction** row is equal to **Match**, the file was identified as a match for the classifier. Below the preview window, a message **We predict this item "matched" this classifier.** is shown. Select **Match** to approve the automatic classification.
 
-1. 继续对列表中的所有项执行上述操作并批准自动分类。 查看所有项后，从顶部窗格中选择“概述”，然后再次选择“要查看的已测试项”，以加载下一组要查看的项 。
+1. When the **Prediction** row is equal to **Not a match**, the file was identified not as a match for the classifier. Below the preview window, a message **We predict this item "does not match" this classifier.** is shown. Select **Not a match** to approve the automatic classification.
 
-1. 对于每 30 个已查看项，系统会显示“自动执行再训练”窗口。 选择“确定”，并继续执行上述步骤，直到查看完所有项。
+1. Proceed with all items in the list and approve the automatic classification. After all items have been reviewed, select **Overview** from the top pane and **Tested items to review** again, to load the next set of items for review.
 
-1. 查看足够多的项后，右上角的“发布”按钮将变为可用。 可用时即将其选中。
+1. For each 30 reviewed items an **Auto-retrain performed** window is shown. Select **OK** and proceed with the previous steps, until no items for review are left.
 
-1. 在“发布分类器”窗口中，选择“是”以发布分类器 。
+1. After sufficient items are reviewed, the **Publish** button in the upper right gets available. Select it as soon it is available.
 
-1. 右侧窗格显示消息“已发布可训练的分类器”时，表示已成功发布了可训练的分类器。
+1. In the **Publish classifier** window, select **Yes** to publish the classifier.
 
-1. 单击右上角的 X，关闭右侧窗格。
+1. When the right side pane with **Your trainable classifier has been published** is displayed, the trainable classifier was successfully published.
 
-1. 返回主网站，自定义分类器已移至“已发布”，“状态”已更改为“可以使用”  。
+1. Close the right side pane with the **X** in the upper right.
 
-1. 使浏览器窗口保持打开状态。
+1. Back at the main site, the custom classifier was moved to **Published** and the **Status** has been changed to **Ready to use**.
 
-你成功创建、训练和发布了自定义的可训练分类器，该分类器与 Contoso Ltd 的现有 SharePoint 网站中存储的文件匹配。
+1. Leave the browser window open.
+
+You have successfully created, trained, and published a custom trainable classifier that matches the files stored on the existing SharePoint sites of Contoso Ltd.
