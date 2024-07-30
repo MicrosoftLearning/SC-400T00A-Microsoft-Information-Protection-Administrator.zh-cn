@@ -6,11 +6,13 @@ lab:
 
 # 实验室 1 - 练习 3 - 管理可训练的分类器
 
-Contoso Ltd. 需要确保存储在“销售和营销”SharePoint 网站中的财务文档和报表已正确分类。 若要实现此目的，需要创建可训练的分类器来识别和标记这些文件。
+Contoso Ltd. 正在开展其 Mark8 项目的研发 (R&D)，该项目专注于先进的无人机技术。 该公司需要确保与此项目相关的敏感信息已正确分类，以防止未经授权的访问或共享。 在此实验室中，你将创建一个可训练的分类器，该分类器旨在标识和标记与 Mark8 项目关联的文档。 由于当前数据集的限制，Contoso 可能没有足够的相关文档示例来充分训练分类器。 本练习将重点介绍具有多样化且全面的数据样本以提高分类器准确性的重要性。
+
+>[!alert] 由于此训练租户中提供的数据有限，本实验室中可训练分类器的创建过程不会获得成功的分类结果。 本练习旨在提供配置可训练分类器的交互式体验，让你能够探索设置和评审过程。 虽然分类器不会按预期充分训练并分类数据，但该练习提供了对有效分类器训练所需的工作流和注意事项的见解。 
 
 ## 任务 1 – 创建可训练的分类器
 
-在此任务中，你将激活租户中可训练的分类器，以创建自定义分类器。
+在此任务中，你将设置可训练的分类器，以识别和保护与 Contoso Ltd 中的 Mark8 项目相关的敏感文档。
 
 1. 仍应使用 LON-CL1\admin 帐户登录到客户端 1 VM (LON-CL1)，并且应该以 Joni Sherman 帐户登录到 Microsoft 365。********
 
@@ -24,8 +26,8 @@ Contoso Ltd. 需要确保存储在“销售和营销”SharePoint 网站中的�
 
 1. 在“命名和描述可训练的分类器”**** 页中输入：
 
-    - **名称**：`Contoso Company Data`
-    - **说明**：`Trainable classifier for company data produced and stored by Contoso Ltd.`
+    - **名称**：`Mark8 Project Documents`
+    - **说明**：`Classifier for identifying sensitive documents related to the Mark8 drone project's research and development efforts.`
 
 1. 选择**下一步**。
 
@@ -53,76 +55,24 @@ Contoso Ltd. 需要确保存储在“销售和营销”SharePoint 网站中的�
 
 现在，正在分析所选 SharePoint 网站中的文档和文件，可能需要长达 24 个小时。
 
-<!---
-## Task 3 – Publish a trainable classifier (optional lab task)
+## 任务 2 - 查看分类器结果
 
-After the new trainable classifier was created and the initial analysis of the documents and files is done, the manual training process needs to be performed. In this task, Joni will start the calibration of the classifier to achieve the required accuracy for publishing.
+Joni 注意到，尽管配置了可训练的分类器，但分类器并没有产生预期的结果。 在此任务中，你将查看可训练分类器的结果，以了解它为何未能成功分类预期内容，其中将重点关注潜在问题，如训练样本不足或未对齐。
 
-1. You should still be logged into your Client 1 VM (SC-400-CL1) as the **SC-400-CL1\admin** account, and you should be logged into Microsoft 365 as **Joni Sherman**.
+1. 你仍然应该在门户的“分类器”**** 页上登录到 Microsoft Purview。 你应该以 Joni Sherman**** 的身份登录到 Microsoft 365。
 
-1. In your browser window, you are in the Microsoft Purview portal at **Data classification** in the **Trainable classifiers** tab.
+1. 选择“已发布”**** 旁边的向下箭头以折叠已发布的可训练分类器，从而更易于识别正在训练的分类器。
 
-1. Select the trainable classifier with the name **Contoso Company Data** of the type **Custom** to open the detailed settings.
+1. “Mark8 项目文档”**** 将显示“正在进行”**** 状态，直到训练完成。
 
-1. Review the **Details** tab on the right side, including the source site for the classifier, the number of processed items and the **Status**, which is in **Need test items**.
+1. 训练完成后，分类器将更新为“训练失败”状态****。
 
-1. To add items for training the classifier, select **Add items to test** to open the right side selection pane.
+1. 要了解此分类器为何失败，请选择带箭头的窗口图标，以“在新窗口中打开”****。
 
-1. In the **Choose sites with items to test** pane, select **+ Choose sites**.
+1. 在 **Mark8 项目文档**分类器窗口中，查看**概述**和**查看测试结果**选项卡，以了解此分类器失败的原因。
 
-1. Select the following SharePoint sites:
+1. 在查看测试结果时，示例数据中会出现许多“误报”**** 和“漏报”****。
 
-    - **Communication site**
-    - **News @ Contoso**
-    - **Contoso Web 1**
-    - **Brand**
-    - **Digital Initiative Public Relations**
-    - **Work @ Contoso**
-    - **Sales and Marketing**
-    - **Contoso Landings**
-    - **Mark 8 Project Team**
-    - **HR**
-    - **Operations**
-    - **Retail**
-    - **PointPublishing Hub Site**
-    - **Team Site**
-    - **Leadership Team**
-    - **Community**
-    - **Give @ Contoso**
-    - **Benefits @ Contoso**
-    - **Learn @ Contoso**
-    - **Campaigns - Events**
+1. 要移除此分类器，请选择“Mark8 项目文档”**** 页右上角的“删除”**** 按钮。
 
-1. Select **Add**.
-
-1. Wait until the sites are shown in the list and select **Add**.
-
-1. When the **Overview** section is updated, a new tab is shown in the top of the window.
-
-1. Select **Tested items to review** from the top pane.
-
-1. It will take between 15 to 30 minutes until first results are ready for review. Refresh the browser window if no files are shown in the list, until data is available.
-
-1. Select the name of the first file from the list to open the preview window.
-
-1. When the **Prediction** row is equal to **Match**, the file was identified as a match for the classifier. Below the preview window, a message **We predict this item "matched" this classifier.** is shown. Select **Match** to approve the automatic classification.
-
-1. When the **Prediction** row is equal to **Not a match**, the file was identified not as a match for the classifier. Below the preview window, a message **We predict this item "does not match" this classifier.** is shown. Select **Not a match** to approve the automatic classification.
-
-1. Proceed with all items in the list and approve the automatic classification. After all items have been reviewed, select **Overview** from the top pane and **Tested items to review** again, to load the next set of items for review.
-
-1. For each 30 reviewed items an **Auto-retrain performed** window is shown. Select **OK** and proceed with the previous steps, until no items for review are left.
-
-1. After sufficient items are reviewed, the **Publish** button in the upper right gets available. Select it as soon it is available.
-
-1. In the **Publish classifier** window, select **Yes** to publish the classifier.
-
-1. When the right side pane with **Your trainable classifier has been published** is displayed, the trainable classifier was successfully published.
-
-1. Close the right side pane with the **X** in the upper right.
-
-1. Back at the main site, the custom classifier was moved to **Published** and the **Status** has been changed to **Ready to use**.
-
-1. Leave the browser window open.
-
-You have successfully created, trained, and published a custom trainable classifier that matches the files stored on the existing SharePoint sites of Contoso Ltd.
+现已完成可训练分类器结果的评审。 此过程强调了数量足够且正确对齐的训练样本对于成功完成分类的重要性。 通过了解分类器失败的原因，可以为将来的配置做好更充分的准备，确保数据分类更加准确、可靠。
