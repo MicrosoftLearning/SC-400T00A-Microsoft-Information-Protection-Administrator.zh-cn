@@ -14,69 +14,94 @@ lab:
 
 # 实验室设置：为管理准备环境
 
-在本实验室中，你将为管理任务配置和准备环境。 按照提供的步骤，你将确保提前启用基本功能和设置，从而在即将进行的实验室活动中获得更轻松的学习体验。 此准备工作将包括激活必要的功能、设置管理权限，以及确保正确配置关键元素。
+在此实验室中，你将为管理任务配置和准备环境。 你将激活必要的功能、设置管理权限，以及确保正确配置关键元素。
+
+**任务**：
+
+- 设置用于实验室练习的用户密码
+- 在 Microsoft Purview 门户中启用审核
+- 在 Microsoft Teams 中启用按名称搜索
+- 在 SharePoint Online 和 OneDrive 中启用信息障碍
 
 ## 任务 - 设置用于实验室练习的用户密码
 
 在此任务中，你将为实验室所需的用户帐户设置密码。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
+1. 使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。 密码应由实验室托管提供程序提供。
 
-1. 在 Microsoft Edge 中，导航到 https://admin.microsoft.com 并以 MOD 管理员的身份 admin@WWLxZZZZZZ.onmicrosoft.com （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户 。
+1. 打开 **Microsoft Edge**，导航到 **`https://admin.microsoft.com`** 并以 MOD 管理员“`admin@WWLxZZZZZZ.onmicrosoft.com`”（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）的身份登录到 Microsoft Purview 门户。
 
 1. 在左侧导航窗格中，展开“**用户**”，然后选择“**活动用户**”。
 
-1. 选中“显示名称”**** 旁边的复选框以选择所有用户。
+1. 选中 **Joni Sherman**、**Lynne Robbins** 和 **Megan Bowen** 左侧的复选框。
 
-1. 取消选中“MOD 管理员”**** 和“Microsoft 服务帐户”**** 旁边的复选框。
+   这些帐户将在实验室练习中使用。
 
-    >[!alert] 请勿更改“MOD 管理员”**** 或“Microsoft 服务帐户”**** 密码。 这将对实验室体验产生负面影响。
-    ><p>
-    > ![显示“Microsoft 服务帐户”和“MOD 管理员”被取消选中的屏幕截图。](../Media/deselectserviceaccounts.png)
+   ![显示需要重置的用户帐户的屏幕截图。](../Media/user-accounts.png)
 
-1. 从中间的操作功能区中选择“重置密码”****，以打开右侧的“重置密码”**** 浮出控件页。
+1. 从顶部导航功能区选择“**重置密码**”按钮，重置所有三个密码。
 
-1. 取消选中“自动创建密码”**** 和“要求此用户在首次登录时更改其密码”****。 不应选择“重置密码”页面上的任何选项。
+   ![显示 Microsoft 365 管理中心中的“重置密码”按钮的屏幕截图。](../Media/reset-password-button.png)
 
-1. 确保在“**重置密码**”浮出控件页上未选中任何复选框。 在“密码”字段中，输入可记住的密码以重置租户中可用的所有用户密码。
+1. 在右侧的“**重置密码**”浮出控件页面，确保取消选择所有选项。
 
-    >[!note] 可将密码重置为与管理员帐户相同的密码，该密码应由实验室托管提供商提供。 在生产环境中不建议将所有用户密码设置为相同的密码，不过这样做在实验室设置中可能很有用。
+   这将确保你可以为用于练习的三个用户选择密码，并且首次登录时无需重置这些密码。
 
-1. 选择“重置密码”按钮可重置除 MOD 管理员和 Microsoft 服务帐户之外的所有用户密码************。
+1. 在“**密码**”字段中，输入可记住的密码以重置用户密码，供今后练习使用。
 
-1. 在“密码已重置”**** 页上，选择“关闭”**** 按钮以返回到“活动用户”**** 页面。
+1. 在“**重置密码**”浮出控件页面底部，选择“**重置密码**”按钮。
+
+1. 在“**密码已重置**”页面，应会看到已重置的三个用户帐户。 在此浮出控制页底部，选择“**关闭**”。
+
+已成功重置实验室练习的密码。
 
 ## 任务 - 在 Microsoft Purview 门户中启用审核
 
-在此任务中，你将在 Microsoft Purview 合规门户中启用“审核”。 此跟踪功能通过监视门户活动来确保可见性和实施问责。
+在此任务中，你将在 Microsoft Purview 门户中启用“审核”以监视门户活动。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
+1. 你仍应使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
 
-1. 在“Microsoft Edge”中，导航到 `https://compliance.microsoft.com`。
+1. 在 Microsoft Edge 中，导航到 Microsoft Purview 门户，`https://purview.microsoft.com`，然后登录。
 
-1. 在左侧导航窗格中选择“**审核**”。
+1. 有关新的 Microsoft Purview 门户的消息将显示在屏幕上。 选择同意数据流披露条款和隐私声明的选项，然后选择“**立即试用**”。
 
-1. 在“审核”页上。 选择“开始记录用户和管理员活动”以激活审核日志记录。
+    ![显示“欢迎使用新的 Microsoft Purview 门户屏幕”的屏幕截图。](../Media/welcome-purview-portal.png)
 
-## 任务 - 在 Microsoft Teams 中启用按名称搜索
+1. 从左侧边栏中选择“**解决方案**”，然后选择“**审核**”。
 
-在此任务中，你将在 Microsoft Teams 中启用“**按名称搜索**”功能，以进行实验室设置。 通过此操作，可以在组织内轻松实现定位和连接。 按照步骤预先激活它，以确保使用信息屏障时的可用性。
+1. 在“**搜索**”页面，选择“**开始录制用户和管理活动**”栏以启用审核日志记录。
 
-1. 你仍应使用 **lon-cl1\admin** 帐户登录到客户端 1 VM (LON-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
+    ![显示“开始录制用户和管理员活动”按钮的屏幕截图。](../Media/enable-audit-button.png)
+
+1. 选择此选项后，蓝色栏应从此页面消失。
+
+已在 Microsoft 365 中成功启用审核。
+
+## 在 Microsoft Teams 中启用按名称搜索
+
+在此任务中，你将在 Microsoft Teams 中启用“**按名称搜索**”功能，以方便用户定位。 在后面的练习中配置信息屏障时需要这样做。
+
+1. 你仍应使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)，并使用 MOD 管理员帐户登录到 Microsoft 365。
 
 1. 在“Microsoft Edge”中，导航到 `https://admin.teams.microsoft.com`。
 
-1. 在左侧导航窗格中的“**Teams**”下拉菜单下，选择“**Teams 设置**”。
+1. 在左侧导航窗格中的“**Teams**”下拉列表下，选择“**Teams 设置**”。
 
-1. 向下滚动到“按名称搜索”，将此功能切换为“打开”以启用此功能
+    ![显示 Teams 管理门户中“Teams 设置”按钮的屏幕截图。](../Media/teams-settings.png)
 
-1. 选择“保存”以保存此设置。
+1. 向下滚动到“**按名称搜索**”部分，然后将“**使用 Exchange 通讯簿策略的范围目录搜索**”切换为“**开启**”。
+
+1. 选择页面底部的“保存”  。
+
+1. 在“**更改可能需要一些时间才能生效**”对话框中，选择“**确认**”。
+
+你已成功在 Microsoft Teams 中启用按名称搜索功能，以消除信息屏障。
 
 ## 任务 - 在 SharePoint Online 和 OneDrive 中启用信息障碍
 
-在此任务中，我们将在 SharePoint Online 和 OneDrive 中启用信息屏障，以促进安全协作并防止未经授权的通信。
+在此任务中，你将在 SharePoint Online 和 OneDrive 中启用信息屏障，以确保安全协作。
 
-1. 你仍然应该会使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 你仍然应该会使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。
 
 1. 打开提升的 PowerShell 窗口，方法是右键选择 Windows 按钮，然后选择“Windows PowerShell (管理员)”。
 
@@ -95,7 +120,7 @@ lab:
 1. 运行以下 cmdlet，以连接到 SharePoint Online 管理中心：
 
     ```powershell
-     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com -Credential admin@WWLxZZZZZZ.onmicrosoft.com
+     Connect-SPOService -Url https://WWLxZZZZZZ-admin.sharepoint.com
     ```
 
     >注意：请务必更新 ZZZZZZ。 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID。
@@ -109,3 +134,5 @@ lab:
     ```
 
 1. 完成此操作后，关闭 PowerShell 窗口。
+
+你已成功在 SharePoint Online 和 OneDrive 中启用信息障碍。
