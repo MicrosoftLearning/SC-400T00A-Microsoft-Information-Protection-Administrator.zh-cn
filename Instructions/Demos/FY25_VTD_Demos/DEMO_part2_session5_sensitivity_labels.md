@@ -4,17 +4,17 @@ lab:
   module: Learning Objective - Implement and manage information protection
 ---
 
-# 会话 2 演示 5 - 创建敏感度标签
+# 第 2 部分 演示 5 - 创建敏感度标签
 
-随着 Microsoft 365 Copilot 的推出，Contoso Ltd. 的人力资源部门开始关注如何保护自动生成文档中的敏感员工数据。 为了确保数据安全，他们正在 Microsoft Purview 中应用敏感度标签。 这些标签将对任何敏感的 HR 文档（包括 AI 创建的文档）进行加密并应用访问控制，从而保护机密信息。
+随着 Microsoft 365 Copilot 的推出，Contoso Ltd. 的人力资源部门开始关注如何保护自动生成文档中的敏感员工数据。 为了确保数据安全，他们在 Microsoft Purview 中应用敏感度标签。 这些标签将对任何敏感的 HR 文档（包括 AI 创建的文档）进行加密并应用访问控制，从而保护机密信息。
 
 ## 任务 1 - 创建敏感度标签
 
-在此任务中，我们将创建一个敏感度标签来保护内部文档，以及一个专门针对 HR 员工数据的子标签。 通过确保只有授权用户才能访问，这些标签将帮助 Contoso Ltd. 保护敏感信息（如员工记录）。
+在此任务中，我们将创建一个敏感度标签来保护内部文档，以及一个专门针对 HR 员工数据的子标签。 这些标签将帮助 Contoso Ltd. 保护敏感信息，如员工记录，确保只有授权用户才能访问它们。
 
 1. 你仍然应该会使用 **SC-400-cl1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。
 
-1. 打开 Microsoft Edge 并导航到 `https://purview.microsoft.com` 。 以 **MOD 管理员**`admin@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）的身份登录 Microsoft Purview。
+1. 打开 Microsoft Edge 并导航到 `https://purview.microsoft.com` 。 以 **MOD 管理员**`admin@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管提供商提供的唯一租户 ID）的身份登录 Microsoft Purview。
 
 1. 在 Microsoft Purview 门户中的左侧边栏中选择“**解决方案**”，然后选择“**信息保护**”。
 
@@ -94,7 +94,7 @@ lab:
 
 创建敏感度标签后，我们将发布这些标签，以供 Contoso Ltd. 的 HR 员工使用。
 
-1. 你仍应使用 **SC-400-cl1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)，并且应该以 **MOD 管理员**的身份登录到 Microsoft Purview。
+1. 你应仍使用 **SC-400-cl1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)，并且应该以 **MOD 管理员**的身份登录到 Microsoft Purview。
 
 1. 在 Microsoft Edge 中，Microsoft Purview 门户选项卡应该仍处于打开状态。 如果没有，请导航到“**`https://purview.microsoft.com`**” > “**解决方案**” > “**信息保护**” > “**敏感度标签**”。
 
@@ -133,7 +133,7 @@ lab:
 
 1. 在“已创建新策略”中，选择“完成”以完成标签策略的发布 。
 
-1. 退出登录 MOD 管理员帐户。
+1. 注销 MOD 管理员帐户。
 
 现在，你已发布敏感度标签，使其可供 HR 团队在文档中使用。
 
@@ -143,11 +143,11 @@ lab:
 
 1. 你仍然应该会使用 **SC-400-cl1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。
 
-1. 导航到 https://www.office.com/，并以 **Joni Sherman** 的身份`jonis@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）**登录**。 Joni 的密码是在演示设置中设定的。
+1. 导航到 https://www.office.com/，以 **Joni Sherman** 的身份`jonis@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管提供商提供的唯一租户 ID）“**登录**”。 Joni 的密码是在演示设置中设置的。
 
 1. 在“**欢迎使用 Microsoft 365**”页上，选择页面中间的“**新建**”。
 
-1. 选择“**文档**”以创建新的 Word 文档。
+1. 选择“**文档**”以创建新的 word 文档。
 
 1. 在“**隐私选项**”对话框中，选择“**关闭**”。
 
@@ -189,17 +189,17 @@ lab:
 
 1. 选择“发送”，发送附有文档的电子邮件。
 
-1. 退出登录 Joni 的帐户。
+1. 注销 Joni 的帐户。
 
 你已成功将员工数据 (HR) 敏感度标签应用于文档和电子邮件。
 
 ## 任务 4 - 配置自动标记
 
-在此任务中，你将创建一个敏感度标签，该标签将自动标记包含敏感 HR 相关员工信息的文档和电子邮件，确保它们自动受到保护，即使是由 Microsoft 365 Copilot 生成的文档和电子邮件也是如此。
+在此任务中，你将创建一个敏感度标签，用于自动标记包含敏感 HR 相关员工信息的文档和电子邮件，确保它们自动受到保护，即使由 Microsoft 365 Copilot 生成也是如此。
 
 1. 你仍然应该会使用 **SC-400-cl1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。
 
-1. 在 **Microsoft Edge** 中，导航到 **`https://purview.microsoft.com`**，并以“**MOD 管理员**”身份登录到 Microsoft Purview 门户。
+1. 在 **Microsoft Edge** 中，导航到 **`https://purview.microsoft.com`**，并使用“**MOD 管理员**”帐户登录到 Microsoft Purview 门户。
 
 1. 在 Microsoft Purview 门户中的左侧边栏中，选择“**解决方案**”，然后选择“**信息保护**”。 选择“**敏感度标签**”。
 
@@ -255,15 +255,15 @@ lab:
 
 1. 在“**设置普通或高级规则**”页上，选择“**下一步**”。
 
-1. 在“**定义所有位置中的内容规则**”页上，选择铅笔图标来编辑规则。
+1. 在“**为所有位置中的内容定义规则**”页上，选择铅笔图标以编辑规则。
 
 1. 在右侧“**新建规则**”浮出控件面板中，在“**条件**”部分的“**内容包含**”下选择“**添加**” > “**可训练分类器**”，然后再次添加 **Paystub** 可训练分类器。
 
-   **为何又要这样做？** 以前在完成此操作时，我们会设置条件以自动标记文件和电子邮件。 这是在 SharePoint 和 OneDrive 中自动标记文件的额外步骤。
+   **为何又要这样做？** 以前完成此操作时，我们会设置条件以自动标记文件和电子邮件。 这是在 SharePoint 和 OneDrive 中自动标记文件的额外步骤。
 
 1. 在“**新建规则**”面板的底部，选择“**保存**”。
 
-1. 返回到“**定义所有位置中的内容规则**”页面，选择“**下一步**”。
+1. 返回到“**为所有位置中的内容定义规则**”页面，选择“**下一步**”。
 
 1. 在“**选择要自动应用的标签**”页上，确保显示“**内部/工资单数据**”，然后选择“**下一步**”。
 
