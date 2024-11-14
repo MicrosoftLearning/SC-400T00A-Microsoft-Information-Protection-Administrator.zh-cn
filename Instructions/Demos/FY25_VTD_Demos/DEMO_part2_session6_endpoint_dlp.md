@@ -4,9 +4,9 @@ lab:
   module: Learning Objective - Create a DLP policy for generative AI sites
 ---
 
-# 会话 2 演示 6 - 创建生成式 AI 站点的终结点 DLP 策略
+# 第 2 部分演示 6 - 为生成式 AI 站点创建终结点 DLP 策略
 
-随着生成式 AI 工具在 Contoso Ltd. 的使用日益增多，该公司的 IT 团队发现了员工通过 AI 平台意外共享敏感客户和员工数据的风险。 为了降低此风险，Contoso 的 IT 团队正在 Microsoft Purview 中实现终结点 DLP。 此 DLP 策略将阻止敏感信息（如客户详细信息、员工记录或其他机密数据）上传到生成式 AI 网站，同时仍允许员工在工作中受益于 AI 工具。
+随着 Contoso Ltd. 的生成式 AI 工具的使用日益增多，该公司的 IT 团队发现了员工通过 AI 平台意外共享敏感客户和员工数据的风险。 为了降低此风险，Contoso 的 IT 团队正在 Microsoft Purview 中实现终结点 DLP。 此 DLP 策略将阻止敏感信息（如客户详细信息、员工记录或其他机密数据）上传到生成式 AI 网站，同时仍允许员工在工作中受益于 AI 工具。
 
 ## 任务 1 - 创建终结点 DLP 策略
 
