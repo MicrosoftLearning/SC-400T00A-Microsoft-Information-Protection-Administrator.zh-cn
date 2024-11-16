@@ -4,9 +4,9 @@ lab:
   module: Learning Objective - Implement and manage information protection
 ---
 
-# 会话 2 演示 5 - 创建敏感度标签
+# 第 2 部分 演示 5 - 创建敏感度标签
 
-随着 Microsoft 365 Copilot 的推出，Contoso Ltd. 的人力资源部门开始关注如何保护自动生成文档中的敏感员工数据。 为了确保数据安全，他们正在 Microsoft Purview 中应用敏感度标签。 这些标签将对任何敏感的 HR 文档（包括 AI 创建的文档）进行加密并应用访问控制，从而保护机密信息。
+随着 Microsoft 365 Copilot 的推出，Contoso Ltd. 的人力资源部门开始关注如何保护自动生成文档中的敏感员工数据。 为了确保数据安全，他们在 Microsoft Purview 中应用敏感度标签。 这些标签将对任何敏感的 HR 文档（包括 AI 创建的文档）进行加密并应用访问控制，从而保护机密信息。
 
 ## 任务 1 - 创建敏感度标签
 
