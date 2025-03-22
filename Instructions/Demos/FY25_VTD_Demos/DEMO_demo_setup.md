@@ -13,24 +13,6 @@ lab:
 
 请确保在运行 VTD 演示之前提前 48 小时执行这些任务，以确保环境已准备好进行演示。
 
-如果你在使用这些实验室时遇到任何问题，请通过 richelle.swinton@microsoft.com 与我联系以解决这些问题。
-
-## 访问 Skillable 环境
-
-1. 访问 SC-400 实验室配置文件 - [https://gtllabs.learnondemand.net/Lab/68392](https://gtllabs.learnondemand.net/Lab/68392)。
-
-1. 使用适当的凭据登录。
-
-1. 选择“**启动**”按钮，启动实验室。
-
-1. 此时会打开一个新窗口来加载实验室环境。 等待实验室配置文件载入。 此过程需要几分钟。
-
-1. 要轻松显示此实验室以进行演示，最简单的方法是使用“**资源**”选项卡中的凭据，并在 Microsoft Edge 的隐身窗口中运行实验室。
-
-    ![显示“欢迎使用新的 Microsoft Purview 门户屏幕”的屏幕截图。](/Instructions/Media/skillable-credentials.png)
-
-1. 你需要在 Skillable 实验室 VM 中运行实验室设置以载入设备。
-
 ## 任务 1 - 设置用户密码演示演练
 
 在此任务中，你将为实验室所需的用户帐户设置密码。

@@ -29,7 +29,7 @@ lab:
 
 1. 使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。 密码应由实验室托管提供程序提供。
 
-1. 打开 **Microsoft Edge**，导航到 **`https://admin.microsoft.com`** 并以 MOD 管理员“`admin@WWLxZZZZZZ.onmicrosoft.com`”（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）的身份登录到 Microsoft Purview 门户。
+1. 打开 **Microsoft Edge** 并导航到**`https://admin.microsoft.com`**，然后以 MOD 管理员身份登录到 Microsoft 365 管理中心 `admin@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管服务提供商提供的唯一租户 ID）。
 
 1. 在左侧导航窗格中，展开“**用户**”，然后选择“**活动用户**”。
 
@@ -74,6 +74,19 @@ lab:
     ![显示“开始录制用户和管理员活动”按钮的屏幕截图。](../Media/enable-audit-button.png)
 
 1. 选择此选项后，蓝色栏应从此页面消失。
+
+>[！提醒]如果在本练习中启用“审核”时收到错误，请使用以下步骤来解决此问题：
+>1. 鼠标右键选择 Windows 按钮，然后选择“终端（管理员）”以打开已提升权限的终端窗口。
+>1. 运行`Install-Module -Name ExchangeOnlineManagement`以安装 ExchangeOnlineManagement 模块
+>1. 运行`Connect-ExchangeOnline`以连接到 ExchangeOnlineManagement 
+>1. 出现提示时，输入实验室托管服务提供商提供的管理员用户名和密码进行登录。
+>1. 要验证是否已启用“审核”，请运行`Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
+>1. 如果为 false，则审核日志已关闭。
+>1. 要启用“审核”，请运行`Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
+>   1. 如果收到错误，指出无法在组织中运行脚本，请运行`Enable-OrganizationCustomization`
+>   1. 尝试重新运行`Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
+>1. 要确认已启用“审核”，请运行`Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
+>1. 完成后，运行`Disconnect-ExchangeOnline`以结束会话
 
 已在 Microsoft 365 中成功启用审核。
 
