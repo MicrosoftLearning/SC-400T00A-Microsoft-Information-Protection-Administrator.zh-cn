@@ -26,7 +26,7 @@ lab:
 
 1. 使用 SC-400-CL1\admin**** 帐户登录客户端 1 VM (SC-400-CL1)。 密码应由实验室托管提供程序提供。
 
-1. 打开 **Microsoft Edge** 并导航到 Microsoft 365 管理中心、`https://admin.microsoft.com`，然后以 **MOD 管理员**、`admin@WWLxZZZZZZ.onmicrosoft.com`（其中 ZZZZZZ 是实验室托管服务提供商提供的唯一租户 ID）身份登录。 管理员的密码应由实验室托管提供程序提供。
+1. 打开 Microsoft Edge**** 并导航到 Microsoft Purview 门户 `https://admin.microsoft.com`，然后以 MOD 管理员****`admin@WWLxZZZZZZ.onmicrosoft.com` 身份登录（其中 ZZZZZZ 是实验室托管提供商提供的唯一租户 ID）。 管理员的密码应由实验室托管提供程序提供。
 
 1. 在左侧边栏中，展开“**用户**”，然后选择“**活动用户**”。
 
