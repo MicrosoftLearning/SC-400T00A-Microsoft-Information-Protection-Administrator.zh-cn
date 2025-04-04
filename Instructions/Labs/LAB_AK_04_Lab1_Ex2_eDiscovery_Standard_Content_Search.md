@@ -22,7 +22,7 @@ lab:
 
 在此任务中，你将给帐户 Joni Sherman 分配必要的电子数据展示权限。 这些权限使你可以根据不当解雇案例的要求管理和导出电子数据展示数据。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 使用 **SC-400-CL1\admin** 帐户登录到客户端 1 VM (SC-400-CL1)。
 
 1. 在 Microsoft Edge 中，导航到 `https://purview.microsoft.com` 并以 MOD 管理员的身份 `admin@WWLxZZZZZZ.onmicrosoft.com` （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。 管理员的密码应由实验室托管提供程序提供。
 
@@ -54,7 +54,7 @@ lab:
 
 接下来，你将为不当解雇诉讼创建电子数据展示（标准版）案件。 此案例将充当与该诉讼相关的所有活动和数据的中央存储库。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。
+1. 使用 SC-400-CL1\admin**** 帐户登录客户端 1 VM (SC-400-CL1)。
 
 1. 在 Microsoft Edge 中，导航到 `https://purview.microsoft.com` 并以 Joni Sherman 的身份 `JoniS@WWLxZZZZZZ.onmicrosoft.com` （其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 门户  。
 
