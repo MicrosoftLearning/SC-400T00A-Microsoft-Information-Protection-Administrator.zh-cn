@@ -31,7 +31,7 @@ lab:
 
 在此任务中，你将授予 Joni 使用合规性管理器创建评估所需的权限。 如果向 Megan 分配了改进操作，则你还将授予她处理改进操作所需的权限。
 
-1. 使用 lon-cl1\admin 帐户登录到客户端 1 VM (LON-CL1)。 密码应由实验室托管提供程序提供。
+1. 使用 SC-400-CL1\admin**** 帐户登录客户端 1 VM (SC-400-CL1)。 密码应由实验室托管提供程序提供。
 
 1. 在 Microsoft Edge **** 中，选择地址栏，导航到 Microsoft Purview 合规性门户**`https://purview.microsoft.com`**，并以 MOD 管理员身份****（其中 ZZZZZZ 是实验室托管提供程序提供的唯一租户 ID）登录到 Microsoft Purview 合规性门户`admin@WWLxZZZZZZ.onmicrosoft.com`。 管理员的密码应由实验室托管提供程序提供。
 
@@ -151,7 +151,7 @@ lab:
 
 在此任务中，你将在合规性管理器中查看并处理分配的改进操作。
 
-1. 你应该会登录到以 lon-cl1\admin 身份打开的客户端 1 VM (LON-CL1)，然后以 Joni Sherman 身份登录到 Microsoft 365。 选择屏幕右上角的图片，然后选择“退出登录”，以退出登录 Joni Sherman 的帐户。
+1. 你应登录到客户端 1 虚拟机 (SC-400-CL1)，以 **SC-400-CL1\admin** 的身份打开，并以 Joni Sherman 的身份登录到 Microsoft 365。 选择屏幕右上角的图片，然后选择“退出登录”，以退出登录 Joni Sherman 的帐户。
 
 1. 打开 Microsoft Edge 并导航到 `https://outlook.office.com` 。
 
@@ -214,7 +214,7 @@ lab:
 
 ## 任务 6 - 手动更新改进操作
 
-1. 你应使用 **lon-cl1\admin** 身份登录到客户端 1 VM (LON-CL1)。
+1. 你应登录到客户端 1 VM (SC-400-CL1)，以 **SC-400-CL1\admin**的身份打开。
 
 1. 打开 Microsoft Edge 并导航到 `https://purview.microsoft.com` 。
 
